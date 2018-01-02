@@ -1,1 +1,105 @@
 /* CSS declarations go here */
+
+/* Global Variables */
+/*
+  Background: #191745
+
+*/
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.site {
+  background-color: #191745;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40px 1fr 100px;
+  grid-template-areas:
+  "navigation"
+  "content"
+  "footer";
+}
+
+.navigation-grid {
+  grid-area: navigation;
+}
+
+.footer-grid {
+  grid-area: footer;
+
+}
+
+.collapsed-menu-icon {
+}
+
+.content-grid {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.content-grid h1 {
+  color: #dddddd;
+  font-size: 35px;
+  margin-top: 50px;
+  letter-spacing: 0.2em;
+}
+
+.content-grid span {
+  color: #858585;
+  font-size: 15px;
+}
+
+.content-grid section {
+  margin: 50px 50px 40px 50px;
+  font-size: 30px;
+  text-align: justify;
+
+}
+.mobile-logo {
+  align-self: center;
+}
+
+
+.wave {
+  position: fixed;
+  bottom: 0;
+    /* position:fixed;
+    bottom:0px;
+    left: 0px;
+    right: 0px; */
+}
+
+.menu-icon {
+  padding: 15px;
+  color: #dddddd;
+}
+.demo-button {
+  width: 200px;
+  align-self: center;
+  background-color: #39d9f1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+/* Define Grid Areas */
