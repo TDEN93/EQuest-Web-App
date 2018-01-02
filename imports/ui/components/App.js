@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-var FontAwesome = require('react-fontawesome');
+const FontAwesome = require('react-fontawesome');
 
 
 // Task component - represents a single todo item
