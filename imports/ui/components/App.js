@@ -23,7 +23,7 @@ export default class App extends Component {
             <span>OF GAMING INTELLIGENCE IS HERE</span>
 
             <section>
-              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <span className="desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Hic rem tempora sequi ut, culpa harum illum nam?
                Illum voluptates accusamus doloribus debitis autem aliquam
                dolores.</span>
