@@ -1,11 +1,9 @@
-/* CSS declarations go here */
-
-/* Global Variables */
-
 /*
   Background: #191745
 
 */
+
+/* Global Variables */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
@@ -13,12 +11,17 @@
   src: url("Panton-LightCaps.otf");
 }
 
-
 * {
   margin: 0;
   padding: 0;
 }
 
+/*
+====================================================================
+              CONTAINERS
+====================================================================
+
+*/
 
 .site {
   background-color: #191745;
@@ -37,36 +40,14 @@
   "footer";
 }
 
-.navigation-grid {
-  grid-area: navigation;
-}
-
-.collapsed-menu-icon {}
-
 .content-grid {
   grid-area: content;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   font-family: 'Panton-LightCaps', 'Montserrat', sans-serif;
 }
-
-.content-grid h1 {
-  color: #dddddd;
-  font-size: 40px;
-  margin-top: 70px;
-  letter-spacing: 10px;
-}
-
-
-.desc-text{
-  color: #ffffff !important;
-}
-
-.content-grid span {
-  color: #858585;
-  font-size: 15px;
-  letter-spacing: 3px;
-}
-
 
 .content-grid section {
 
@@ -75,7 +56,6 @@
   text-align: justify;
 }
 
-
 .footer-grid {
   grid-area: footer;
   margin-top: 100px;
@@ -83,13 +63,41 @@
 
 }
 
-.mobile-logo {
-
+.navigation-grid {
+  grid-area: navigation;
 }
 
-.wave {
-  align-self: flex-end;
+
+/*
+====================================================================
+              FONT
+====================================================================
+
+*/
+
+.content-grid h1 {
+  color: #dddddd;
+  font-size: 40px;
+  margin-top: 70px;
+  letter-spacing: 10px;
 }
+
+.content-grid span {
+  color: #858585;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.main-copy{
+  color: #ffffff !important;
+}
+
+/*
+====================================================================
+              BUTTONS
+====================================================================
+
+*/
 
 .menu-icon {
   padding: 15px;
@@ -117,4 +125,70 @@
   text-decoration: none;
 }
 
-/* Define Grid Areas */
+/*
+====================================================================
+              IMAGES
+====================================================================
+
+*/
+.desktop-logo {
+  display: none;
+}
+
+.mobile-logo {
+
+}
+
+.wave {
+  align-self: flex-end;
+}
+
+
+/*
+====================================================================
+              MEDIA QUERIES
+====================================================================
+
+*/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .mobile-logo {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .content-grid {
+
+    text-align: left;
+  }
+  .desktop-logo {
+    display: block;
+    width: 50%;
+    height: 50%;
+    align-self: flex-end;
+  }
+  .content-grid h1 {
+    align-self: flex-start;
+    color: #dddddd;
+    font-size: 20px;
+    margin: 0 0 0 50px;
+    letter-spacing: 10px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
