@@ -25,6 +25,7 @@ let veh_ids = [];
 let veh_id_array = [];
 let player_id_array = [];
 let player_data = [{}];
+let player_names = [];
 
 
 // Remove duplicate IDs
@@ -34,6 +35,26 @@ let uniqueID = (arrArg) => {
     });
 }
 
+let removeDuplicateFilter = (arr) => {
+    let unique_array = arr.filter(function(elem, index, self){
+        return index == self.indexOf(elem);
+    });
+    return unique_array
+}
+
+// ----------- Grabs the player names -------------------------------
+let playerName = replayJson.find('name',function(){
+    return this == 'Engine.PlayerReplicationInfo:PlayerName';
+})
+
+let pNameVal = playerName.sibling('value');
+pNameVal.each(function(index,path,value){
+    player_names.push(value.string_attribute_value);
+})
+
+player_names = removeDuplicateFilter(player_names);
+
+// -----------------------------------------------------------------------------------------------
 // ----------- Grabs the int value associated with the player -------------------------------
 let vehicle_ID = replayJson.find('name', function(){
     return this == "Engine.Pawn:PlayerReplicationInfo";
@@ -43,8 +64,9 @@ let int = vehicle_ID.sibling('value');
 int.each(function(index,path,value){
     player_id_array.push(value.flagged_int_attribute_value.int);
 });
-
 // -----------------------------------------------------------------------------------------------
+// If player_id_array = actor_id.value, grab player name
+
 
 // ----------- Grabs the actor id value associated with the player. Use this value in actor_id for loc info -------------------------------
 let vehicle_ID_actor = vehicle_ID.parent().parent().parent().parent();
@@ -55,10 +77,9 @@ vehicle_ID_actor.each(function(index,path,value){
 
 veh_ids.push(uniqueID(veh_id_array));
 
-
 // -----------------------------------------------------------------------------------------------
 
-
+console.time('test');
 let actor_ids = replayJson.find('rigid_body_state_attribute_value', function(){
     return this;
 }).parent().parent().parent().parent().parent();
@@ -66,19 +87,22 @@ let actor_ids = replayJson.find('rigid_body_state_attribute_value', function(){
 actor_ids.each(function(index,path,values){
     for(let i = 0; i < veh_ids[0].length; i++){
         if(values.actor_id.value == veh_ids[0][i]){
-            
             for(let j = 0; j < values.value.updated_replication_value.length; j++){
                 if(values.value.updated_replication_value[j].value.rigid_body_state_attribute_value != undefined){
-                    // console.log("Actor_ID " + values.actor_id.value);
-                    // console.log("Veh ID " + veh_ids[0][i]);
-                    player_data.push(values.value.updated_replication_value[j].value.rigid_body_state_attribute_value);
+                    player_data.push({linear : values.value.updated_replication_value[j].value.rigid_body_state_attribute_value.linear_velocity, 
+                                    angular : values.value.updated_replication_value[j].value.rigid_body_state_attribute_value.angular_velocity,
+                                    location : values.value.updated_replication_value[j].value.rigid_body_state_attribute_value.location,
+                                    rotation : values.value.updated_replication_value[j].value.rigid_body_state_attribute_value.rotation,
+                                    ID : veh_ids[0][i]});
                     // Need to clean up and sort information.
                 }
             }
-            
-
         }
     }
 })
 
-console.log(player_data[5]);
+function test(){
+    console.log(player_data.slice(0, 10));
+}
+test();
+console.timeEnd('test');
