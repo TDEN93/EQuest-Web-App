@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Home = (props) => {
-	// console.log(props);
-	// console.log(props.Data);
-	// console.log(props.homePage.titleTag.slice(0, 2));
 	const page = props.homePage;
 	return (
 		<header id="home-section">
