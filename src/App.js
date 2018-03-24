@@ -14,7 +14,6 @@ import {
 
 class App extends Component {
 	render() {
-		// console.log(Data);
 		return (
 			<BrowserRouter>
 			   <div>
