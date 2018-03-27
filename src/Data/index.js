@@ -112,7 +112,7 @@ for(let i = 0; i < playerVehicleIDArray.length; i++){
     //             Veh_ID: vehicleActorArray[i]});
     
 }
-// console.log(actorID);
+
 // -----------------------------------------------------------------------------------------------
 
 let actor_ids = replay.find('rigid_body_state_attribute_value', function () {
@@ -123,7 +123,7 @@ actor_ids.each(function (index, path, values) {
     for (let i = 0; i < actorID.length; i++) {
         if (values.actor_id.value == actorID[i]) {
             for (let j = 0; j < values.value.updated_replication_value.length; j++) {
-                if (values.value.updated_replication_value[j].value.rigid_body_state_attribute_value != undefined) {
+                if (values.value.updated_replication_value[j].value.rigid_body_state_attribute_value != undefined && actorID[i] == 23) {
                     player_data.push({
                         Name : playerNameArray[i],
                         vID: actorID[i],
@@ -146,7 +146,8 @@ actor_ids.each(function (index, path, values) {
 })
 
 let fileOutput = "testOutput.json";
-let obj = player_data.slice(1,10);
+let obj = player_data;
+
 
 jsonFile.writeFile(fileOutput, obj, function(err){
     console.error(err);
