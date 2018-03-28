@@ -4,7 +4,6 @@ const Home = (props) => {
 	const page = props.homePage;
 	return (
 		<header id="home-section">
-
       <div className="dark-overlay">
         <div className="home-inner">
           <div className="container-fluid">

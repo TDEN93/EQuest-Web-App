@@ -7,7 +7,6 @@ import Link from './Link';
 
 const Nav = (props) => {
 	const Links = props.navPage.navNames.map((link, index) => {
-		console.log(link);
 		return <Link key={index} name={link} />
 	});
 	return (

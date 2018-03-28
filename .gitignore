@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/RL-Analytics/node_modules
+/src/Data/node_modules
 
 # testing
 /coverage
