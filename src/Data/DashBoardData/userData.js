@@ -1,0 +1,111 @@
+export const uDash = [{ // user Dashboard Data/ Graphs
+  // width:
+  gameBar: { // Bar graph
+    title: 'Bar',  // Title
+    labels:  ['Movements', 'Avg Goals', 'Times'], 
+    datasets: [{
+      label: 'Game Data',
+      backgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
+      borderColor: 'rgba(255,99,132,1)',
+      borderWidth: 1,
+      hoverBackgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+      hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+      data: [3.2, 3.99, 5, 0]
+    }]
+  },
+
+  gameSideBar: { // Side bar.
+    labels: ['Total Goals'],
+    datasets: [{
+      label: 'Total goals ever made',
+      backgroundColor: ['rgba(169, 173, 172,0.6)'],
+      borderColor: 'rgba(23, 239, 185,1)',
+      borderWidth: 1,
+      hoverBackgroundColor: ['rgba(169, 173, 172,0.9)'],
+      hoverBorderColor: ['rgba(169, 173, 172,0.9)'],
+      data: [10]
+    }]
+  },
+   bubble: { // Bubble ,
+    labels: ['Posistion', 'Other'],
+    datasets: [
+      {
+        label: 'Avg time',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [
+          {x:10,y:20,r:5}, {x:-5,y:10,r:10}, {x:-10,y:-10,r:5},
+          {x:20,y:30,r:5}, {x:2,y:12,r:5}, {x:5,y:0,r:10},
+          {x:10,y:0,r:5}, {x:10,y:-20,r:5}, {x:5,y:-20,r:5} ]
+      }
+    ]
+  },
+   lineHoursPlayed: { // Line
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [
+    {
+      label: 'Hours Played',
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: 'rgba(75,192,192,0.4)',
+      borderColor: 'rgba(75,192,192,1)',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: 'rgba(75,192,192,1)',
+      pointBackgroundColor: '#fff',
+      pointBorderWidth: 1,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+      data: [65, 59, 80, 81, 56, 55, 40]
+    }
+  ]
+},
+
+ radar: { // Radar
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  datasets: [
+    {
+      label: 'More user data',
+      backgroundColor: 'rgba(179,181,198,0.2)',
+      borderColor: 'rgba(179,181,198,1)',
+      pointBackgroundColor: 'rgba(179,181,198,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(179,181,198,1)',
+      data: [28, 48, 40, 19, 96, 27, 100]
+    },
+    {
+      label: 'My Second dataset',
+      backgroundColor: 'rgba(255,99,132,0.2)',
+      borderColor: 'rgba(255,99,132,1)',
+      pointBackgroundColor: 'rgba(255,99,132,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(255,99,132,1)',
+      data: [65, 59, 90, 81, 56, 55, 40]
+    }
+  ]
+}
+
+}];

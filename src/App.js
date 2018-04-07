@@ -7,6 +7,7 @@ import Data from './Data/content';
 // import Lib
 import Nav from './components/Nav';
 import Home from './components/Home';
+import Dashboard from './components/dashboard';
 import {
 	BrowserRouter,
 	Route
@@ -19,6 +20,7 @@ class App extends Component {
 			   <div>
            <Route path='/' render={() => <Nav navPage={Data[0].Components[0]} />} />
            <Route exact path='/' render={() => <Home homePage={Data[0].Components[1]}/>} />
+					 <Route exact path='/dashboard' render={() => <Dashboard homePage={Data[0].Components[1]}/>} />
         </div>
       </BrowserRouter>
 		);
