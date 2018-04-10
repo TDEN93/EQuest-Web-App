@@ -1,9 +1,9 @@
 import React from 'react';
+import Link from './Link';
 import logo from './assets/images/logo-full.svg';
 import {
 	NavLink
 } from 'react-router-dom';
-import Link from './Link';
 
 const Nav = (props) => {
 	const Links = props.navPage.navNames.map((link, index) => {
@@ -11,7 +11,7 @@ const Nav = (props) => {
 	});
 	return (
 		<div className="container-full">
-
+    
         <nav className="navbar navbar-expand-lg fixed-top">
           <NavLink to='/' className="navbar-brand">
             <img src={logo} alt="" height="50" />

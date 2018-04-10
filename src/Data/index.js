@@ -106,8 +106,8 @@ vehicle_ID_actor.each(function (index, path, value) {
 	vehicleActorArray.push(value.actor_id.value);
 });
 
-vehicleActorArray = uniqueID(vehicleActorArray);
-
+vehicleActorArray = removeDuplicateFilter(vehicleActorArray);
+console.log(vehicleActorArray);
 for (let i = 0; i < playerVehicleIDArray.length; i++) {
 	actorID.push(vehicleActorArray[i]);
 	// actorID.push({Player_ID: playerActor_ID[i],
