@@ -32,22 +32,22 @@ const Home = (props) => {
 {/* // Service Icons */}
                 <a href="/"><figure class="service-item">
                   <img src={replayIcon} alt="replay-icon" height="80"/>
-                  <figcaption class="caption">Replay Analysis</figcaption>
+                  <figcaption class="caption">{page.replayService}</figcaption>
                 </figure></a>
 
                 <a href="/"><figure class="service-item">
                   <img src={statsIcon} alt="replay-icon" height="80"/>
-                  <figcaption class="caption">Overall Stats</figcaption>
+                  <figcaption class="caption">{page.overallService}</figcaption>
                 </figure></a>
 
                 <a href="/"><figure class="service-item">
                   <img src={tacticalIcon} alt="replay-icon" height="80"/>
-                  <figcaption class="caption">Tactical Analysis</figcaption>
+                  <figcaption class="caption">{page.tacticalService}</figcaption>
                 </figure></a>
 
               </div>
 
-              <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>
+              <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
               
             </div>
           </div>

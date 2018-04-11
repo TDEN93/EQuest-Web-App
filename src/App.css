@@ -64,7 +64,6 @@ ul.navbar-nav li:last-child a{
     color: #F8931F;
 }
 
-
 /* Social Icons Home Page */
 .fa-twitter {
     /* color: #1da1f2; */
@@ -84,6 +83,7 @@ ul.navbar-nav li:last-child a{
 }
 .social-media-container {
     margin: 100px 0 0 43px;
+    clear:both;
 }
 .social-media {
     text-decoration: none;
@@ -116,8 +116,6 @@ figure.service-item:hover {
     margin: 20px 0 0 0;
 }
 
-
-
 /* Ribbons */
 .corner-ribbon{
     width: 200px;
@@ -147,6 +145,27 @@ figure.service-item:hover {
     box-shadow: 0 0 3px rgba(0,0,0,.3);
   }
   .corner-ribbon.orange{background: #F8931F;}
+
+  /* Header Items Game.js */
+  .supported-game-container {
+      margin: 100px auto 0 auto !important;
+  }
+  figure.header-item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    transition: all .2s ease-in-out;
+    
+}
+figure.header-item img {
+    border: 1px solid #F8931F;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+figure.header-item:hover {
+    transform: scale(1.1);
+}
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
