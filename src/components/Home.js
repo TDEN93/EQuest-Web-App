@@ -1,8 +1,5 @@
 import React from 'react';
-import twitterIcon from './assets/images/social/twitter.svg';
-import facebookIcon from './assets/images/social/facebook.svg';
-import googlePlusIcon from './assets/images/social/google-plus.svg';
-import instagramIcon from './assets/images/social/instagram.svg';
+import 'font-awesome/css/font-awesome.min.css';
 import replayIcon from './assets/images/icons-home/replay.png';
 import statsIcon from './assets/images/icons-home/stats.png';
 import tacticalIcon from './assets/images/icons-home/tactical.png';
@@ -15,13 +12,13 @@ const Home = (props) => {
         <div className="home-inner">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-12 social-media-container">
+              <div className="col-lg-1 social-media-container">
                 <ul className="social-media">
 {/* // Social Media Icons */}
-                  <li><img src={twitterIcon} alt="Twitter Logo" height="20" /></li>
-                  <li><img src={facebookIcon} alt="Facebook Logo" height="20" /></li>
-                  <li><img src={googlePlusIcon} alt="Google-Plus Icon" height="20" /></li>
-                  <li><img src={instagramIcon} alt="Instram Icon" height="20" /></li>
+                  <li><a href="/"><i className="fa fa-twitter fa-2x"></i></a></li>
+                  <li><a href="/"><i className="fa fa-facebook-square fa-2x"></i></a></li>
+                  <li><a href="/"><i className="fa fa-google-plus fa-2x"></i></a></li>
+                  <li><a href="/"><i className="fa fa-instagram fa-2x"></i></a></li>
                 </ul>
               </div>
             
