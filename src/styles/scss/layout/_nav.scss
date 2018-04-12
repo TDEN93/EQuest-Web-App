@@ -1,21 +1,39 @@
 // Site navigation ----------------------- //
 
-.navbar-brand {
-  margin: 20px 0 0 50px;
+nav {
+  &.navbar {
+    //navbar trans
+    background-color: rgba(0,0,0,.0);
+  }
+
+  .navbar-header {
+    // Logo
+
+    a {
+      > img {
+        // Logo Image tag.
+        margin: 0;
+      }
+    }
+  }
+
+  ul.navbar-nav li {
+    // Nav Links
+    // NOTE:  MAX is 58px on right margin. At 770px screen width, sign up will drop down to a new line.
+    margin: 20px 58px 0 0;
+
+    a {
+      color: $darker-white;
+    }
+
+    & a:hover {
+      text-decoration: none;
+      color          : $color-prim;
+    }
+
+    &:last-child a {
+      color: $color-prim !important;
+    }
+
+  }
 }
-
-ul.navbar-nav li {
-  margin: 20px 80px 0 0;
-
-  a {
-    color: $darker-white;
-  }
-  & a:hover {
-    text-decoration: none;
-    color: $color-prim;
-  }
-  &:last-child a {
-    color: $color-prim !important;
-  }
-}
-

@@ -348,17 +348,20 @@ a:hover {
 .navbar-toggler {
   display: none; }
 
-.navbar-brand {
-  margin: 20px 0 0 50px; }
+nav.navbar {
+  background-color: transparent; }
 
-ul.navbar-nav li {
-  margin: 20px 80px 0 0; }
-  ul.navbar-nav li a {
+nav .navbar-header a > img {
+  margin: 0; }
+
+nav ul.navbar-nav li {
+  margin: 20px 58px 0 0; }
+  nav ul.navbar-nav li a {
     color: #ccc; }
-  ul.navbar-nav li a:hover {
+  nav ul.navbar-nav li a:hover {
     text-decoration: none;
     color: #F8931F; }
-  ul.navbar-nav li:last-child a {
+  nav ul.navbar-nav li:last-child a {
     color: #F8931F !important; }
 
 header {
@@ -372,14 +375,14 @@ header {
     background-attachment: fixed;
     font-family: Panton-LightCaps; }
     header#home-section .main-content {
-      margin: 0px auto 0 auto;
+      margin: 0 auto;
       text-align: center; }
   header .social-media {
     text-decoration: none;
     list-style-type: none;
     margin: 130px 0 0 60px; }
     header .social-media li {
-      margin: 10px 0 0 0; }
+      margin: 10px 0 0; }
     header .social-media .fa-twitter {
       /* color: #1da1f2; */
       color: #fff; }
@@ -437,7 +440,7 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 50px;
-    transition: all .2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
   header figure.header-item img {
     border: 1px solid #F8931F;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
@@ -456,7 +459,7 @@ header {
     text-shadow: 2px 2px 5px #000; }
     header .home-title.home-title h1 + p {
       font-size: 1.85rem;
-      line-height: 0.1;
+      line-height: 1;
       font-weight: #ccc;
       letter-spacing: 4.5px;
       font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
