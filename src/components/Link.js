@@ -1,13 +1,11 @@
 import React from 'react';
-import {
-	NavLink
-} from 'react-router-dom';
-
+import { // BS import  Or li
+  NavItem
+} from 'react-bootstrap'; // Dependencies
+import {NavLink} from 'react-router-dom';
 const Link = (props) => {
-	return (
-		<li>
-      <NavLink to={`/${props.name}`}>{props.name}</NavLink>
-    </li>
-	);
+  return (<NavItem eventKey={2} title="Item">
+    <NavLink to={`/${props.name}`}>{props.name}</NavLink>
+  </NavItem>);
 }
 export default Link;

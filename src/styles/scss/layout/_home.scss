@@ -1,0 +1,152 @@
+// Home section  ------------------------ //
+
+header {
+  // All of home section //
+  &#home-section {
+    background           : url("../components/assets/images/background.png") no-repeat;
+    min-height           : 100vh;
+    background-size      : cover;
+    background-attachment: fixed;
+    font-family          : $Panton-LightCaps;
+
+    .main-content {
+      margin    : 0px auto 0 auto;
+      text-align: center;
+    }
+  }
+  // Social Icons
+  .social-media {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 130px 0 0 60px;
+
+    li {
+      margin: 10px 0 0 0;
+    }
+
+    .fa-twitter {
+      /* color: #1da1f2; */
+        color: $white;
+    }
+    .fa-facebook-square {
+      /* color: #3b5998; */
+        color: $white;
+    }
+    .fa-google-plus {
+      /* color: #dd4b39; */
+        color: $white;
+    }
+    .fa-instagram {
+      /* color: #833ab4; */
+        color: $white;
+    }
+  }
+
+  /* Ribbons */
+  .corner-ribbon {
+    width            : 200px;
+    background       : #e43;
+    position         : absolute;
+    top              : 25px;
+    left             : -50px;
+    text-align       : center;
+    line-height      : 50px;
+    letter-spacing   : 1px;
+    color            : #000;
+    transform        : rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+    &.sticky {
+      position: fixed;
+    }
+
+    &.bottom-right {
+      top              : auto;
+      right            : -50px;
+      bottom           : 25px;
+      left             : auto;
+      transform        : rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &.shadow {
+      box-shadow: 0 0 3px rgba(0,0,0,.3);
+    }
+
+    &.orange {
+      background: $burnt-orange;
+    }
+  }
+
+  /* Service Icons */
+  .service-icons-container {
+    margin         : 50px auto 0;
+    display        : flex;
+    justify-content: center;
+
+    .service-item {
+      vertical-align: top;
+      display       : inline-block;
+      text-align    : center;
+      margin        :  0 50px !important;
+      transition    : all 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  // Figcaption settings ------------------------ //
+   /* Header Items Game.js */
+  .supported-game-container {
+    margin: 100px auto 0 auto !important;
+  }
+  figure.header-item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    transition: all .2s ease-in-out;
+    
+  }
+  figure.header-item img {
+    border: 1px solid #F8931F;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+  }
+  figure.header-item:hover {
+    transform: scale(1.1);
+  }
+  // Captions
+  .caption {
+    color    : white;
+    display  : block;
+    font-size: 1em;
+    margin   : 20px 0 0;
+  }
+
+  // Home Page specific -------------------- //
+  .home-title {
+    // Main title.
+    &.home-title h1 {
+      @include text(5.2777rem, 1.2, $color-text-light);
+      font-family: $HomeFont;
+      text-shadow: 2px 2px 5px $black;
+
+      + p {
+        // Bottom content
+        @include text(1.85rem, 0.1, 4.5px, $darker-white);
+        font-family: $HomeFont;
+        text-shadow: 2px 2px 5px #000;
+
+        > span {
+          color: $burnt-orange;
+        }
+      }
+
+      > span {
+        color: $burnt-orange;
+      }
+    }
+  }
+}

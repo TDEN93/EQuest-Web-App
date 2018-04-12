@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "App.css",
+	"sources": [
+		"scss/App.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\n  // font-family: Panton-LightCaps;\n  // src        : url(\"../components/assets/fonts/Panton-LightCaps.otf\");\n}\n\n@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (min-width: 600px) {}\n\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {}\n\n@media only screen and (min-width: 1200px) {}"
+	],
+	"names": [],
+	"mappings": "AAKA,OAAO,CAAC,uDAAI;AALZ,UAAU,GAOV,kDAAkD;AAGlD,qEAAqE;AAGrE,sDAAsD;AAGtD,oDAAoD"
+}
