@@ -1,0 +1,21 @@
+// Site navigation ----------------------- //
+
+.navbar-brand {
+  margin: 20px 0 0 50px;
+}
+
+ul.navbar-nav li {
+  margin: 20px 80px 0 0;
+
+  a {
+    color: $darker-white;
+  }
+  & a:hover {
+    text-decoration: none;
+    color: $color-prim;
+  }
+  &:last-child a {
+    color: $color-prim !important;
+  }
+}
+

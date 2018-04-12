@@ -1,0 +1,63 @@
+// @font-face {
+//   font-family: Panton-LightCaps;
+//   src        : url("../components/assets/fonts/Panton-LightCaps.otf");
+// }
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include text(1.5em, 1.5, $color: $color-text-light);
+  margin     : 0;
+  font-family: $stack-helvetica;
+}
+
+h1,
+h2 {
+  font-family: $stack-abolition;
+}
+
+h2 {
+  @include text(1.5125rem, 1.1, normal);
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  @include text(1.25rem, 1.2, $color: $color-text-dark);
+  margin-bottom: 1.7em;
+}
+
+img {
+  max-width    : 100%;
+  margin-bottom: 20px;
+  border-radius: $br;
+}
+
+ol,
+ul {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a {
+  &:link {
+    color          : $light-blue;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: rgba($color-link-default, .8);
+  }
+}
+
+.navbar-toggler {
+  // BS Toggle mobile class
+  display: none;
+}

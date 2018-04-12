@@ -1,8 +1,6 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
-import rocketLeagueHeader from './assets/images/game-headers/headerRL.jpg';
-import statsIcon from './assets/images/icons-home/stats.png';
-import tacticalIcon from './assets/images/icons-home/tactical.png';
+
 
 const Research = (props) => {
     const page = props.researchPage;

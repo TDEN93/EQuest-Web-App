@@ -1,3 +1,5 @@
+// import {Replay, Stats, Tactical} from '../components/assets/images/icons-home'; //Import png icons.
+
 const contentData = [
 	{
 		Components: [
@@ -17,8 +19,17 @@ const contentData = [
 				replayService: 'Replay Analysis',
 				overallService: 'Overall Stats',
 				tacticalService: 'Tactical Analysis',
-				betaTag: 'Beta'
-			} 
+				betaTag: 'Beta',
+				figcaption: [
+					"Replay Analysis", "Overall Stats", "Tactical Analysis"
+		  		], // Figcaption text.
+			pngs: [
+				// Png file src path.
+				'./assets/images/icons-home/replay.png',
+				'./assets/images/icons-home/stats.png',
+				'./assets/images/icons-home/tactical.png'
+			  ] 
+			}
     ],
 		// 	name: '',
 		// 	navNames: ['Team', 'Services', 'Showcase', 'Blog', 'SignUp'],
