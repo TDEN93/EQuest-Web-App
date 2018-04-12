@@ -3,11 +3,7 @@ import logo from './assets/images/logo-full.svg';
 import { NavLink } from 'react-router-dom';
 import { // BS import
   Nav,
-  NavItem,
-  NavDropdown,
-  MenuItem,
   Col,
-  Glyphicon,
   Grid,
   Navbar,
   Row
