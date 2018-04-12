@@ -13,8 +13,12 @@ const contentData = [
 				titleTopAfter: 'DEVELOPMENT',
 				titleTag: 'THE FUTURE OF ',
 				titleTagColored: 'GAMING INTELLIGENCE',
-				titleTagAfter: ' IS COMING SOON'
-			} // Somehow make "esports and game development professionals" more noticable
+				titleTagAfter: ' IS COMING SOON',
+				replayService: 'Replay Analysis',
+				overallService: 'Overall Stats',
+				tacticalService: 'Tactical Analysis',
+				betaTag: 'Beta'
+			} 
     ],
 		// 	name: '',
 		// 	navNames: ['Team', 'Services', 'Showcase', 'Blog', 'SignUp'],

@@ -8,6 +8,10 @@ import Data from './Data/content';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Dashboard from './components/dashboard';
+import Games from './components/Games';
+import Services from './components/Services';
+import About from './components/About';
+import Research from './components/Research';
 import {
 	BrowserRouter,
 	Route
@@ -21,6 +25,10 @@ class App extends Component {
            <Route path='/' render={() => <Nav navPage={Data[0].Components[0]} />} />
            <Route exact path='/' render={() => <Home homePage={Data[0].Components[1]}/>} />
 		   <Route exact path='/dashboard' render={() => <Dashboard homePage={Data[0].Components[1]}/>} />
+		   <Route exact path='/research' render={() => <Research researchPage={Data[0].Components[1]}/>} />
+		   <Route exact path='/services' render={() => <Services servicePage={Data[0].Components[1]}/>} />
+		   <Route exact path='/games' render={() => <Games gamePage={Data[0].Components[1]}/>} />
+		   <Route exact path='/about' render={() => <About aboutPage={Data[0].Components[1]}/>} />
         </div>
       </BrowserRouter>
 		);
