@@ -364,6 +364,7 @@ nav ul.navbar-nav li {
   nav ul.navbar-nav li:last-child a {
     color: #F8931F !important; }
 
+<<<<<<< HEAD
 header {
   /* Ribbons */
   /* Service Icons */
@@ -467,6 +468,116 @@ header {
       header .home-title.home-title h1 + p > span {
         color: #F8931F; }
     header .home-title.home-title h1 > span {
+=======
+header#home-section {
+  background: url("../components/assets/images/background.png") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Panton-LightCaps; }
+  header#home-section .main-content {
+    margin: 0px auto 0 auto;
+    text-align: center; }
+
+header .corner-ribbon {
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #000;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+  header .corner-ribbon.sticky {
+    position: fixed; }
+  header .corner-ribbon.bottom-right {
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+  header .corner-ribbon.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+  header .corner-ribbon.orange {
+    background: #F8931F; }
+
+header .home-title.home-title h1 {
+  font-size: 5.2777rem;
+  line-height: 1.2;
+  letter-spacing: #fff;
+  font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 5px #000; }
+  header .home-title.home-title h1 + p {
+    font-size: 1.85rem;
+    line-height: 0.1;
+    font-weight: #ccc;
+    letter-spacing: 4.5px;
+    font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 5px #000; }
+    header .home-title.home-title h1 + p > span {
+>>>>>>> 07522f53e36b642b7600c7fa3ee127e4eab1450a
       color: #F8931F; }
+  header .home-title.home-title h1 > span {
+    color: #F8931F; }
+
+.supported-game-container {
+  margin: 100px auto 0 auto !important; }
+
+figure.header-item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+  transition: all .2s ease-in-out; }
+
+figure.header-item img {
+  border: 1px solid #F8931F;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+figure.header-item:hover {
+  transform: scale(1.1); }
+
+.service-icons-container {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center; }
+  .service-icons-container .service-item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0 50px !important;
+    transition: all 0.5s ease-in-out; }
+    .service-icons-container .service-item:hover {
+      transform: scale(1.1); }
+
+.caption {
+  color: white;
+  display: block;
+  font-size: 1em;
+  margin: 20px 0 0; }
+
+.social-media {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 130px 0 0 60px; }
+  .social-media li {
+    margin: 10px 0 0 0; }
+  .social-media .fa-twitter {
+    /* color: #1da1f2; */
+    color: #fff; }
+  .social-media .fa-facebook-square {
+    /* color: #3b5998; */
+    color: #fff; }
+  .social-media .fa-google-plus {
+    /* color: #dd4b39; */
+    color: #fff; }
+  .social-media .fa-instagram {
+    /* color: #833ab4; */
+    color: #fff; }
 
 /*# sourceMappingURL=index.css.map */

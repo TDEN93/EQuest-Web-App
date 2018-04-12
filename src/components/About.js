@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 // import 'font-awesome/css/font-awesome.min.css';
 import rocketLeagueHeader from './assets/images/game-headers/headerRL.jpg';
 import statsIcon from './assets/images/icons-home/stats.png';
@@ -17,5 +18,32 @@ const About = (props) => {
       </div>
     </div>
   </header>);
+=======
+import 'font-awesome/css/font-awesome.min.css';
+
+import { // BS import
+    Grid,
+    Row,
+    Col,
+    Clearfix
+  } from 'react-bootstrap';
+
+const About = (props) => {
+    const page = props.aboutPage;
+    return (
+        <header id="home-section">
+            <Grid fluid={true}>
+                <Row className="home-inner">
+                    <Col className="main-content">
+                       
+
+                    <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
+                    </Col>
+                </Row>
+            </Grid >
+
+        </header >
+    );
+>>>>>>> 07522f53e36b642b7600c7fa3ee127e4eab1450a
 }
 export default About;

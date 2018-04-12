@@ -3,10 +3,15 @@ import logo from './assets/images/logo-full.svg';
 import { NavLink } from 'react-router-dom';
 import { // BS import
   Nav,
+<<<<<<< HEAD
   Col,
   Grid,
   Navbar,
   Row
+=======
+  NavItem,
+  Navbar
+>>>>>>> 07522f53e36b642b7600c7fa3ee127e4eab1450a
 } from 'react-bootstrap';
 import AnchorLink from './Link';
 const SiteNav = (props) => {
