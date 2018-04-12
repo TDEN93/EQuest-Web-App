@@ -1,0 +1,19 @@
+.supported-game-container {
+    margin: 100px auto 0 auto !important;
+  }
+  figure.header-item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    transition: all .2s ease-in-out;
+    
+  }
+  figure.header-item img {
+    border: 1px solid #F8931F;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+  }
+  figure.header-item:hover {
+    transform: scale(1.1);
+  }

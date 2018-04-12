@@ -1,0 +1,27 @@
+  // Service Icons //
+  .service-icons-container {
+    margin         : 50px auto 0;
+    display        : flex;
+    justify-content: center;
+
+    .service-item {
+      vertical-align: top;
+      display       : inline-block;
+      text-align    : center;
+      margin        :  0 50px !important;
+      transition    : all 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
+  // Captions
+  .caption {
+    color    : white;
+    display  : block;
+    font-size: 1em;
+    margin   : 20px 0 0;
+  }

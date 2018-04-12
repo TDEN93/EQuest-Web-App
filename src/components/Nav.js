@@ -3,7 +3,8 @@ import logo from './assets/images/logo-full.svg';
 import { NavLink } from 'react-router-dom';
 import { // BS import
   Nav,
-  NavItem
+  NavItem,
+  Navbar
 } from 'react-bootstrap';
 import AnchorLink from './Link';
 
