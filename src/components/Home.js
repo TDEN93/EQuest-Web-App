@@ -1,5 +1,5 @@
 import React from 'react';
-import { Replay, Stats, Tactical } from './assets/images/icons-home';
+// import { Replay, Stats, Tactical } from './assets/images/icons-home';
 // Import png icons.
 // Import components
 // import Svg from './Svgs';
