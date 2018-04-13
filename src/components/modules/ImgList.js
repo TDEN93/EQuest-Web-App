@@ -1,12 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import Dependencies
 export const Svgs = (props) => {
   return(
     // {/*  Social Media Icons */}
     <li><img src={props.src} alt="Graphics Icons" height="20"/></li>);
 }
-// import React from 'react';
-// import Dependencies
 const Pngs = (props) => {
   return(
     // {/*  Service Icons */}
