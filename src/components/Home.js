@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Replay, Stats, Tactical } from './assets/images/icons-home';
+import { Replay, Stats, Tactical } from './assets/images/icons-home';
 // Import png icons.
 // Import components
 // import Svg from './Svgs';
@@ -12,10 +12,10 @@ import { // BS import
 }
 from 'react-bootstrap';
 // import 'font-awesome/css/font-awesome.min.css';
-import replayIcon from './assets/images/icons-home/replay.png';
-import statsIcon from './assets/images/icons-home/stats.png';
-import tacticalIcon from './assets/images/icons-home/tactical.png';
-// import img from './ImgList';
+// import replayIcon from './assets/images/icons-home/replay.png';
+// import statsIcon from './assets/images/icons-home/stats.png';
+// import tacticalIcon from './assets/images/icons-home/tactical.png';
+import Icons from './modules/ImgList';
 const Home = (props) => {
   const page = props.homePage;
   return(<header id="home-section">
@@ -53,7 +53,8 @@ const Home = (props) => {
         </Col>
         <Col xs={12} md={12}>
           <div className="service-icons-container">
-            <a href="/">
+
+            {/* <a href="/">
               <figure className="service-item">
                 <img src={replayIcon} alt="replay-icon" height="80"/>
                 <figcaption className="caption">{page.replayService}</figcaption>
@@ -70,7 +71,7 @@ const Home = (props) => {
                 <img src={tacticalIcon} alt="replay-icon" height="80"/>
                 <figcaption className="caption">{page.tacticalService}</figcaption>
               </figure>
-            </a>
+            </a> */}
           </div>
         </Col>
         <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>
