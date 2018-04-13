@@ -7,17 +7,12 @@ import { // BS import
   Grid,
   Navbar,
   Row,
-  // NavItem,
-  // Navbar
 } from 'react-bootstrap';
 import AnchorLink from './Link';
 const SiteNav = (props) => {
   const Links = props.navPage.navNames.map((link, index) => {
     return <AnchorLink key={index} name={link}/>
   });
-  // function handleSelect(selectedKey) {
-  //   alert(`selected ${selectedKey}`);
-  // }
   return(<Grid fluid={true}>
       <Row>
         <Col xs={12}>
