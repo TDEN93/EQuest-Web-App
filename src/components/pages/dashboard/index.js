@@ -21,11 +21,16 @@ export default class GitHub extends Component {
 		super(props);
 		this.state = {
 			uDash: uDash[0], // pull in user dashboard data
+			hasError: false
 		};
 	}
 	componentDidMount() { // Will need this.
+		this.setState({ hasError: true });
 	}
 	render() { // RENDER() //
+		if(this.state.hasError) {
+			return <h1> Oh no something went wrong </h1>
+		}
 		const uDash = this.state.uDash;
 		return(<div className='col-12 dash-contain row'>
             <div className='col-6'>
