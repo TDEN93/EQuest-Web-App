@@ -15,8 +15,8 @@ import About from './components/About';
 import Research from './components/Research';
 import { BrowserRouter, Route } from 'react-router-dom';
 class App extends Component {
-  render() {
-    return(<BrowserRouter>
+	render() {
+		return(<BrowserRouter>
 				<div>
 					<Route path='/' render={() => <Nav navPage={Data[0].Components[0]} />} />
 					<Route exact path='/' render={() => <Home homePage={Data[0].Components[1]} />} />
