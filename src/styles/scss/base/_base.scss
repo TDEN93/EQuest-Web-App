@@ -8,11 +8,13 @@
   box-sizing: border-box;
 }
 
+
 #root {
   background           : url("../components/assets/images/background.png") no-repeat;
   min-height           : 100vh;
   background-size      : cover;
   background-attachment: fixed;
+  overflow: scroll;
   overflow: hidden;
 }
 

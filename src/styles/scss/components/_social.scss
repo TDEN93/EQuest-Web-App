@@ -1,4 +1,10 @@
- // Social Icons
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .social-media-container {
+    display: none;
+  }
+}
+
 .social-media-container {
   margin: 0 !important;
 }
