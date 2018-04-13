@@ -1,12 +1,11 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
 import { // BS import
 	Grid,
 	Row,
 	Col,
 	Clearfix
 } from 'react-bootstrap';
-import bgImage from './assets/images/services/keyboard.jpeg';
+import bgImage from '../assets/images/services/keyboard.jpeg';
 const Services = (props) => {
 	const page = props.servicePage;
 	console.log(page);

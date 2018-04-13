@@ -22,5 +22,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# push ignore files
-/src/components/index.js
+# push ignore files go here.

@@ -9,14 +9,13 @@ import {
 	Doughnut,
 	Bar,
 	HorizontalBar,
-  Bubble,
-  Line,
-  Radar
+	Bubble,
+	Line,
+	Radar
 } from 'react-chartjs-2'; // Charts for data ^^
 import {
-  uDash
-} from '../../Data/DashBoardData/userData';
-
+	uDash
+} from '../../../Data/DashBoardData/userData';
 export default class GitHub extends Component {
 	constructor(props) {
 		super(props);
@@ -24,13 +23,11 @@ export default class GitHub extends Component {
 			uDash: uDash[0], // pull in user dashboard data
 		};
 	}
-  componentDidMount() { // Will need this.
+	componentDidMount() { // Will need this.
 	}
-
-  render() { // RENDER() //
-    const uDash = this.state.uDash;
-  return (
-          <div className='col-12 dash-contain row'>
+	render() { // RENDER() //
+		const uDash = this.state.uDash;
+		return(<div className='col-12 dash-contain row'>
             <div className='col-6'>
               {/*  Not sure if we want titles or not? I cant decide honesly... */}
               <h1>{uDash.gameBar.title}</h1>
@@ -77,7 +74,6 @@ export default class GitHub extends Component {
         height={50} />
     </div>
 
-        </div>
-  );
-}
+        </div>);
+	}
 }

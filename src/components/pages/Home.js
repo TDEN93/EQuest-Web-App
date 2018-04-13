@@ -6,7 +6,7 @@ import { // BS import
 	Clearfix
 }
 from 'react-bootstrap';
-import { Png, Svg } from './modules/IconList'; // Import icons with Figcaption.
+import { Png, Svg } from '../modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
 	const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
