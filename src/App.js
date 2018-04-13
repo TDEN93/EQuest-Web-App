@@ -12,11 +12,9 @@ import Services from './components/Services';
 import About from './components/About';
 import Research from './components/Research';
 import { BrowserRouter, Route } from 'react-router-dom';
-
 class App extends Component {
-	render() {
-		return (
-			<BrowserRouter>
+  render() {
+    return(<BrowserRouter>
 				<div>
 					<Route path='/' render={() => <Nav navPage={Data[0].Components[0]} />} />
 					<Route exact path='/' render={() => <Home homePage={Data[0].Components[1]} />} />
@@ -26,9 +24,7 @@ class App extends Component {
 					<Route exact path='/games' render={() => <Games gamePage={Data[0].Components[1]} />} />
 					<Route exact path='/about' render={() => <About aboutPage={Data[0].Components[1]} />} />
 				</div>
-			</BrowserRouter>
-		);
-	}
+			</BrowserRouter>);
+  }
 }
-
 export default App;
