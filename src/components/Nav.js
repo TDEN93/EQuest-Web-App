@@ -1,19 +1,19 @@
 import React from 'react';
 import logo from './assets/images/logo-full.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; // Dependencies
 import { // BS import
-  Nav,
-  Col,
-  Grid,
-  Navbar,
-  Row,
+	Nav,
+	Col,
+	Grid,
+	Navbar,
+	Row,
 } from 'react-bootstrap';
-import AnchorLink from './Link';
+import AnchorLink from './modules/Link'; // Import links module.
 const SiteNav = (props) => {
-  const Links = props.navPage.navNames.map((link, index) => {
-    return <AnchorLink key={index} name={link}/>
-  });
-  return(<Grid fluid={true}>
+	const Links = props.navPage.navNames.map((link, index) => {
+		return <AnchorLink key={index} name={link}/>
+	});
+	return(<Grid fluid={true}>
       <Row>
         <Col xs={12}>
     <Navbar inverse="inverse" collapseOnSelect="collapseOnSelect">

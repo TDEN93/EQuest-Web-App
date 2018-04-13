@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Replay, Stats, Tactical } from './assets/images/icons-home';
 import { // BS import
 	Grid,
 	Row,
@@ -7,14 +6,13 @@ import { // BS import
 	Clearfix
 }
 from 'react-bootstrap';
-import { Png } from './modules/ImgList'; // Import icons with Figcaption.
+import { Png, Svg } from './modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
-	// const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
-	// 	return <Svg key={i} src={svg}/>
-	// });
+	const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
+		return <Svg key={i} src={svg}/>
+	});
 	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
-		// const Png = Icons.Pngs;
 		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
 	});
 	return(<header id="home-section">
@@ -22,26 +20,8 @@ const Home = (props) => {
       <Row className="home-title">
         <Col className="social-media-container">
           <ul className="social-media">
-            <li>
-              <a href="/">
-                <i className="fa fa-twitter fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i className="fa fa-facebook-square fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i className="fa fa-google-plus fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i className="fa fa-instagram fa-2x"></i>
-              </a>
-            </li>
+            {/* Append svg icons to page */}
+            {/* {svgs} */}
           </ul>
         </Col>
         <Col xs={12} md={12} lg={12} className="main-content">
