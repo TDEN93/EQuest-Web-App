@@ -1,17 +1,15 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import rocketLeagueHeader from './assets/images/game-headers/headerRL.jpg';
 import { // BS import
-    Grid,
-    Row,
-    Col,
-    Clearfix
-  } from 'react-bootstrap';
-
+  Grid,
+  Row,
+  Col,
+  Clearfix
+} from 'react-bootstrap';
 const Games = (props) => {
-    const page = props.gamePage;
-    return (
-        <header id="home-section">
+  const page = props.gamePage;
+  return(<header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
                     <Col className="main-content supported-game-container">
@@ -44,7 +42,6 @@ const Games = (props) => {
                 </Row>
             </Grid >
 
-        </header >
-    );
+        </header >);
 }
 export default Games;

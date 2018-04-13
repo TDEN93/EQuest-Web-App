@@ -1,28 +1,24 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
-
+// import 'font-awesome/css/font-awesome.min.css';
 import { // BS import
-    Grid,
-    Row,
-    Col,
-    Clearfix
-  } from 'react-bootstrap';
-
+  Grid,
+  Row,
+  Col,
+  Clearfix
+} from 'react-bootstrap';
 const About = (props) => {
-    const page = props.aboutPage;
-    return (
-        <header id="home-section">
+  const page = props.aboutPage;
+  return(<header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
                     <Col className="main-content">
-                       
+
 
                     <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
                     </Col>
                 </Row>
             </Grid >
 
-        </header >
-    );
+        </header >);
 }
 export default About;

@@ -9,24 +9,10 @@
 
 // Text
 
-@mixin text($size, $l-height: null, $l-spacing: null, $weight: null, $color: null, $family: null) {
+@mixin text($size, $l-height: null, $l-spacing: null, $weight: null, $color: null) {
   font-size     : $size;
   line-height   : $l-height;
   font-weight   : $weight;
   color         : $color;
   letter-spacing: $l-spacing;
-  font-family   : $family;
-}
-
-//RGBA
-@mixin alpha-color($color, $opacity: 0.3) {
-  background: $color; /* The Fallback */
-  background: rgba($color, $opacity);
-}
-
-// Center Text in Div
-@mixin text-center() {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
