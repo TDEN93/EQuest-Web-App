@@ -8,7 +8,7 @@ import { // BS import
   Navbar,
   Row,
 } from 'react-bootstrap';
-import AnchorLink from './Link';
+import AnchorLink from './modules/Link'; // Import links module.
 
 const SiteNav = (props) => {
   const Links = props.navPage.navNames.map((link, index) => {
