@@ -3,6 +3,7 @@
     margin         : 50px auto 0;
     display        : flex;
     justify-content: center;
+    
 
     .service-item {
       vertical-align: top;
@@ -25,3 +26,45 @@
     font-size: 1em;
     margin   : 20px 0 0;
   }
+
+.services-container {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 45px;
+  border-top: 1px solid rgba($black, 0.5);
+  border-bottom: 5px solid $color-prim;
+  img {
+    position: relative;
+    border-radius: 0 !important;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5;
+  }
+  // h1 {
+  //   position: absolute;
+  //   top: 30%;
+  //   left: 40%;
+  // }
+  
+}
+.service-navigation-container {
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @include text(1.3em, null, 2px, null, #111, $HomeFont);
+
+}
+.service-nav-item {
+  margin: 0 50px 0 50px;
+  background-color: $color-prim;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  
+  p {
+    @include text-center();
+  }
+}

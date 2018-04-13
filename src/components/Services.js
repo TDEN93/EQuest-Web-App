@@ -1,28 +1,38 @@
 import React from 'react';
-// import 'font-awesome/css/font-awesome.min.css';
-// import rocketLeagueHeader from './assets/images/game-headers/headerRL.jpg';
-// import statsIcon from './assets/images/icons-home/stats.png';
-// import tacticalIcon from './assets/images/icons-home/tactical.png';
-// import 'font-awesome/css/font-awesome.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import { // BS import
-  Grid,
-  Row,
-  Col,
-  Clearfix
+    Grid,
+    Row,
+    Col,
+    Clearfix
 } from 'react-bootstrap';
+
+import bgImage from './assets/images/services/keyboard.jpeg';
+
+
 const Services = (props) => {
-  const page = props.servicePage;
-  return(<header id="home-section">
+    const page = props.servicePage;
+    return (
+        <header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
                     <Col className="main-content">
+                        <div className="services-container">
+                            {/* <h1>We are research professionals</h1> */}
+                            <img src={bgImage} alt="replay-icon" />
+                        </div>
+                        <div className="service-navigation-container">
+                            <div className="service-nav-item serv1"><p>{page.replayService}</p></div>
+                            <div className="service-nav-item serv2"><p>{page.tacticalService}</p></div>
+                            <div className="service-nav-item serv3"><p>{page.apiService}</p></div>
+                        </div>
 
-
-                    <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
+                        <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
                     </Col>
                 </Row>
             </Grid >
 
-        </header >);
+        </header >
+    );
 }
 export default Services;

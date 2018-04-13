@@ -302,6 +302,13 @@ template {
 * {
   box-sizing: border-box; }
 
+#root {
+  background: url("../components/assets/images/background.png") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden; }
+
 body {
   font-size: 1.5em;
   line-height: 1.5;
@@ -328,7 +335,7 @@ h3 {
 img {
   max-width: 100%;
   margin-bottom: 20px;
-  border-radius: 10px; }
+  border-radius: none; }
 
 ol,
 ul {
@@ -348,126 +355,77 @@ a:hover {
 .navbar-toggler {
   display: none; }
 
-nav.navbar {
-  background-color: transparent; }
+.navbar {
+  min-height: 50px; }
 
-nav .navbar-header a > img {
-  margin: 0; }
+.navbar-right {
+  margin-top: 40px;
+  margin-right: -50px; }
 
-nav ul.navbar-nav li {
-  margin: 20px 58px 0 0; }
-  nav ul.navbar-nav li a {
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  position: relative !important; }
+
+ul.navbar-nav li {
+  margin: 0px 80px 0 0; }
+  ul.navbar-nav li a {
     color: #ccc; }
-  nav ul.navbar-nav li a:hover {
+  ul.navbar-nav li a:hover {
     text-decoration: none;
     color: #F8931F; }
-  nav ul.navbar-nav li:last-child a {
+  ul.navbar-nav li:last-child a {
     color: #F8931F !important; }
 
-header {
-  /* Ribbons */
-  /* Service Icons */
-  /* Header Items Game.js */ }
-  header#home-section {
-    background: url("../components/assets/images/background.png") no-repeat;
-    min-height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Panton-LightCaps; }
-    header#home-section .main-content {
-      margin: 0 auto;
-      text-align: center; }
-  header .social-media {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 130px 0 0 60px; }
-    header .social-media li {
-      margin: 10px 0 0; }
-    header .social-media .fa-twitter {
-      /* color: #1da1f2; */
-      color: #fff; }
-    header .social-media .fa-facebook-square {
-      /* color: #3b5998; */
-      color: #fff; }
-    header .social-media .fa-google-plus {
-      /* color: #dd4b39; */
-      color: #fff; }
-    header .social-media .fa-instagram {
-      /* color: #833ab4; */
-      color: #fff; }
-  header .corner-ribbon {
-    width: 200px;
-    background: #e43;
-    position: absolute;
-    top: 25px;
-    left: -50px;
-    text-align: center;
-    line-height: 50px;
-    letter-spacing: 1px;
-    color: #000;
+header#home-section {
+  font-family: Panton-LightCaps; }
+  header#home-section .main-content {
+    margin: 0px auto 0 auto;
+    text-align: center; }
+
+header .corner-ribbon {
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #000;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+  header .corner-ribbon.sticky {
+    position: fixed; }
+  header .corner-ribbon.bottom-right {
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
-    header .corner-ribbon.sticky {
-      position: fixed; }
-    header .corner-ribbon.bottom-right {
-      top: auto;
-      right: -50px;
-      bottom: 25px;
-      left: auto;
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg); }
-    header .corner-ribbon.shadow {
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-    header .corner-ribbon.orange {
-      background: #F8931F; }
-  header .service-icons-container {
-    margin: 50px auto 0;
-    display: flex;
-    justify-content: center; }
-    header .service-icons-container .service-item {
-      vertical-align: top;
-      display: inline-block;
-      text-align: center;
-      margin: 0 50px !important;
-      transition: all 0.5s ease-in-out; }
-      header .service-icons-container .service-item:hover {
-        transform: scale(1.1); }
-  header .supported-game-container {
-    margin: 100px auto 0 auto !important; }
-  header figure.header-item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px;
-    transition: all 0.2s ease-in-out; }
-  header figure.header-item img {
-    border: 1px solid #F8931F;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
-  header figure.header-item:hover {
-    transform: scale(1.1); }
-  header .caption {
-    color: white;
-    display: block;
-    font-size: 1em;
-    margin: 20px 0 0; }
-  header .home-title.home-title h1 {
-    font-size: 5.2777rem;
-    line-height: 1.2;
-    letter-spacing: #fff;
+  header .corner-ribbon.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+  header .corner-ribbon.orange {
+    background: #F8931F; }
+
+header .home-title.home-title h1 {
+  font-size: 5.2777rem;
+  line-height: 1.2;
+  letter-spacing: #fff;
+  font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 5px #000; }
+  header .home-title.home-title h1 + p {
+    font-size: 1.85rem;
+    line-height: 0.1;
+    font-weight: #ccc;
+    letter-spacing: 4.5px;
     font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
     text-shadow: 2px 2px 5px #000; }
-    header .home-title.home-title h1 + p {
-      font-size: 1.85rem;
-      line-height: 1;
-      font-weight: #ccc;
-      letter-spacing: 4.5px;
-      font-family: "Do Hyeon", Helvetica, Arial, sans-serif;
-      text-shadow: 2px 2px 5px #000; }
-      header .home-title.home-title h1 + p > span {
-        color: #F8931F; }
-    header .home-title.home-title h1 > span {
+    header .home-title.home-title h1 + p > span {
       color: #F8931F; }
+  header .home-title.home-title h1 > span {
+    color: #F8931F; }
 
 .supported-game-container {
   margin: 100px auto 0 auto !important; }
@@ -506,10 +464,50 @@ figure.header-item:hover {
   font-size: 1em;
   margin: 20px 0 0; }
 
+.services-container {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 45px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid #F8931F; }
+  .services-container img {
+    position: relative;
+    border-radius: 0 !important;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5; }
+
+.service-navigation-container {
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.3em;
+  color: #111;
+  letter-spacing: 2px;
+  font-family: "Do Hyeon", Helvetica, Arial, sans-serif; }
+
+.service-nav-item {
+  margin: 0 50px 0 50px;
+  background-color: #F8931F;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px; }
+  .service-nav-item p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.social-media-container {
+  margin: 0 !important; }
+
 .social-media {
   text-decoration: none;
   list-style-type: none;
-  margin: 130px 0 0 60px; }
+  margin: 0 0 0 20px;
+  display: inline-block; }
   .social-media li {
     margin: 10px 0 0 0; }
   .social-media .fa-twitter {
