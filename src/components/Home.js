@@ -1,5 +1,6 @@
 import React from 'react';
-// import { Replay, Stats, Tactical } from './assets/images/icons-home';  Import png icons.
+// import { Replay, Stats, Tactical } from './assets/images/icons-home';
+// Import png icons.
 // Import components
 // import Svg from './Svgs';
 // import Png from './Pngs';
@@ -8,14 +9,16 @@ import { // BS import
   Row,
   Col,
   Clearfix
-} from 'react-bootstrap';
+}
+from 'react-bootstrap';
 // import 'font-awesome/css/font-awesome.min.css';
 import replayIcon from './assets/images/icons-home/replay.png';
 import statsIcon from './assets/images/icons-home/stats.png';
 import tacticalIcon from './assets/images/icons-home/tactical.png';
+// import img from './ImgList';
 const Home = (props) => {
   const page = props.homePage;
-  return (<header id="home-section">
+  return(<header id="home-section">
     <Grid fluid={true}>
       <Row className="home-title">
         <Col className="social-media-container">
