@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './styles/index.css';
 import './styles/App.css';
+// Import fonts & icons.
+import 'font-awesome/css/font-awesome.min.css';
 //Import DataBase
 import Data from './Data/content';
 // import Lib
@@ -25,6 +27,6 @@ class App extends Component {
 					<Route exact path='/about' render={() => <About aboutPage={Data[0].Components[1]} />} />
 				</div>
 			</BrowserRouter>);
-  }
+	}
 }
 export default App;

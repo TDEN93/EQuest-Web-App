@@ -1,19 +1,16 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import { // BS import
-    Grid,
-    Row,
-    Col,
-    Clearfix
+	Grid,
+	Row,
+	Col,
+	Clearfix
 } from 'react-bootstrap';
-
 import bgImage from './assets/images/services/keyboard.jpeg';
-
-
 const Services = (props) => {
-    const page = props.servicePage;
-    return (
-        <header id="home-section">
+	const page = props.servicePage;
+	console.log(page);
+	return(<header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
                     <Col className="main-content">
@@ -32,7 +29,6 @@ const Services = (props) => {
                 </Row>
             </Grid >
 
-        </header >
-    );
+        </header >);
 }
 export default Services;

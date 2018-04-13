@@ -1,5 +1,4 @@
 import { Replay, Stats, Tactical } from '../components/assets/images/icons-home'; //Import png icons.
-import { Twitter, Instagram, GooglePlus, Facebook } from '../components/assets/images/social'; //Import svg icons.
 const contentData = [{
 	Components: [{
 		name: 'Nav.js',
@@ -16,14 +15,15 @@ const contentData = [{
 		replayService: 'Replay Analysis',
 		overallService: 'Overall Stats',
 		tacticalService: 'Tactical Analysis',
+		apiService: ' Tracker API',
 		betaTag: 'Beta',
 		figcaption: ["Replay Analysis", "Overall Stats", "Tactical Analysis"], // Figcaption text.
 		svgs: [
 			// Svg file src path.
-			Twitter,
-			Instagram,
-			GooglePlus,
-			Facebook
+			'fa fa-twitter fa-2x',
+			'fa fa-facebook-square fa-2x',
+			'fa fa-google-plus fa-2x',
+			'fa fa-instagram fa-2x'
 		],
 		pngs: [
 			// Png file src path.
