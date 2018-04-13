@@ -3,9 +3,10 @@ import logo from './assets/images/logo-full.svg';
 import { NavLink } from 'react-router-dom';
 import { // BS import
   Nav,
-  NavItem,
+  Col,
+  Grid,
   Navbar,
-  MenuItem
+  Row,
 } from 'react-bootstrap';
 import AnchorLink from './Link';
 
@@ -17,31 +18,26 @@ const SiteNav = (props) => {
     alert(`selected ${selectedKey}`);
   }
   return (
-    <Navbar fluid={true} staticTop={false}>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <NavLink to='/' className="navbar-brand">
-            <img src={logo} alt="logo" height="50" />
-          </NavLink>
-        </Navbar.Brand>
-      </Navbar.Header>
-      <Nav bsClass='navBar' className='navbar-nav' bsStyle="pills" activeKey={1} onSelect={handleSelect}>
-        {Links}
-      </Nav>
-    </Navbar>
-    // <nav className="navbar navbar-expand-lg ">
-    //   <NavLink to='/' className="navbar-brand">
-    //     <img src={logo} alt="logo" height="50" />
-    //   </NavLink>
-    //   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    //     <span className="navbar-toggler-icon"></span>
-    //   </button>
-    //   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    //     <Nav bsClass='navBar' className='navbar-nav' bsStyle="pills" activeKey={1} onSelect={handleSelect}>
-    //       {Links}
-    //     </Nav>
-    //   </div>
-    // </nav>
-  );
+    <Grid fluid={true}>
+      <Row>
+        <Col xs={12}>
+          <Navbar fluid={true} collapseOnSelect="collapseOnSelect">
+            <Navbar.Header>
+              <Navbar.Brand>
+                <NavLink to='/'>
+                  <img src={logo} alt="logo" height="50" />
+                </NavLink>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+              <Nav pullRight="pullRight">
+                {Links}
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Col>
+      </Row>
+    </Grid>);
 }
 export default SiteNav;

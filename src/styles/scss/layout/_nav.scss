@@ -2,13 +2,17 @@
 .navbar {
   min-height: 50px;
 }
+.navbar-right {
+  margin-top: 40px;
+  margin-right: -50px;
+}
 .navbar-default {
   background-color: transparent;
   border: none;
   position: relative !important;
 }
 .navbar-brand {
-  margin: 0px 0 0 50px;
+
 }
 
 ul.navbar-nav li {
