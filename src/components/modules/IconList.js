@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import Dependencies
 const Svg = (props) => {
-  console.log(props.src);
 	return(
 		// {/*  Social Media Icons */}
     <li><NavLink to="/"><i className={props.src}></i></NavLink></li>
