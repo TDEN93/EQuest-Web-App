@@ -19,10 +19,12 @@ const contentData = [
 				replayService: 'Replay Analysis',
 				overallService: 'Overall Stats',
 				tacticalService: 'Tactical Analysis',
+				apiService: 'Tracker API',
+
 				betaTag: 'Beta',
 				figcaption: [
 					"Replay Analysis", "Overall Stats", "Tactical Analysis"
-		  		], // Figcaption text.
+				], // Figcaption text.
 			pngs: [
 				// Png file src path.
 				'./assets/images/icons-home/replay.png',
