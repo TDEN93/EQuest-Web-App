@@ -17,12 +17,18 @@ const contentData = [{
 		tacticalService: 'Tactical Analysis',
 		betaTag: 'Beta',
 		figcaption: ["Replay Analysis", "Overall Stats", "Tactical Analysis"], // Figcaption text.
+		// svgs: [
+		// 	// Svg file src path.
+		// 	Twitter,
+		// 	Instagram,
+		// 	GooglePlus,
+		// 	Facebook
+		// ],
 		pngs: [
 			// Png file src path.
-			// './assets/images/icons-home/replay.png',
-			// './assets/images/icons-home/stats.png',
-			// './assets/images/icons-home/tactical.png'
-			Replay, Stats, Tactical
+			Replay,
+			Stats,
+			Tactical
 		]
 	}],
 	// 	name: '',
