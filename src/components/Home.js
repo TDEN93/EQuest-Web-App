@@ -21,7 +21,7 @@ const Home = (props) => {
         <Col className="social-media-container">
           <ul className="social-media">
             {/* Append svg icons to page */}
-            {/* {svgs} */}
+            {svgs}
           </ul>
         </Col>
         <Col xs={12} md={12} lg={12} className="main-content">
