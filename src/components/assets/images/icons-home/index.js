@@ -4,4 +4,4 @@ import tacticalIcon from './tactical.png';
 const Replay = replayIcon;
 const Stats = statsIcon;
 const Tactical = tacticalIcon;
-export default { Replay, Stats, Tactical };
+export { Replay, Stats, Tactical };

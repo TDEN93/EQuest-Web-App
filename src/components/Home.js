@@ -1,9 +1,5 @@
 import React from 'react';
 // import { Replay, Stats, Tactical } from './assets/images/icons-home';
-// Import png icons.
-// Import components
-// import Svg from './Svgs';
-// import Png from './Pngs';
 import { // BS import
 	Grid,
 	Row,
@@ -11,18 +7,14 @@ import { // BS import
 	Clearfix
 }
 from 'react-bootstrap';
-// import 'font-awesome/css/font-awesome.min.css';
-// import replayIcon from './assets/images/icons-home/replay.png';
-// import statsIcon from './assets/images/icons-home/stats.png';
-// import tacticalIcon from './assets/images/icons-home/tactical.png';
-import Icons from './modules/ImgList';
+import { Png } from './modules/ImgList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
 	// const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
 	// 	return <Svg key={i} src={svg}/>
 	// });
 	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
-		const Png = Icons.Pngs;
+		// const Png = Icons.Pngs;
 		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
 	});
 	return(<header id="home-section">
@@ -60,26 +52,8 @@ const Home = (props) => {
         </Col>
         <Col xs={12} md={12}>
           <div className="service-icons-container">
+            {/* Append all png icons and figcaptions to page */}
             {pngs}
-
-            {/* <a href="/">
-              <figure className="service-item">
-                <img src={replayIcon} alt="replay-icon" height="80"/>
-                <figcaption className="caption">{page.replayService}</figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure className="service-item">
-                <img src={statsIcon} alt="replay-icon" height="80"/>
-                <figcaption className="caption">{page.overallService}</figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure className="service-item">
-                <img src={tacticalIcon} alt="replay-icon" height="80"/>
-                <figcaption className="caption">{page.tacticalService}</figcaption>
-              </figure>
-            </a> */}
           </div>
         </Col>
         <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>
