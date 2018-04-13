@@ -5,10 +5,10 @@ import { Replay, Stats, Tactical } from './assets/images/icons-home';
 // import Svg from './Svgs';
 // import Png from './Pngs';
 import { // BS import
-  Grid,
-  Row,
-  Col,
-  Clearfix
+	Grid,
+	Row,
+	Col,
+	Clearfix
 }
 from 'react-bootstrap';
 // import 'font-awesome/css/font-awesome.min.css';
@@ -17,8 +17,15 @@ from 'react-bootstrap';
 // import tacticalIcon from './assets/images/icons-home/tactical.png';
 import Icons from './modules/ImgList';
 const Home = (props) => {
-  const page = props.homePage;
-  return(<header id="home-section">
+	const page = props.homePage;
+	// const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
+	// 	return <Svg key={i} src={svg}/>
+	// });
+	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
+		const Png = Icons.Pngs;
+		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
+	});
+	return(<header id="home-section">
     <Grid fluid={true}>
       <Row className="home-title">
         <Col className="social-media-container">
@@ -53,6 +60,7 @@ const Home = (props) => {
         </Col>
         <Col xs={12} md={12}>
           <div className="service-icons-container">
+            {pngs}
 
             {/* <a href="/">
               <figure className="service-item">
