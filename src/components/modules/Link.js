@@ -1,11 +1,11 @@
 import React from 'react';
 import { // BS import  Or li
-  NavItem
+	NavItem
 } from 'react-bootstrap'; // Dependencies
-import { NavLink } from 'react-router-dom';
-const Link = (props) => {
-  return(<NavItem xsHidden eventKey={2} title="Nav Item">
+import { NavLink, Link } from 'react-router-dom';
+const AnchorLink = (props) => {
+	return(<li role='presentation'>
     <NavLink to={`/${props.name}`}>{props.name}</NavLink>
-  </NavItem>);
+  </li>);
 }
-export default Link;
+export default AnchorLink;

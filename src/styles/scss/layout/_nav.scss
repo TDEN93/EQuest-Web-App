@@ -1,5 +1,6 @@
 // Site navigation ----------------------- //
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
   .navbar-brand {
     margin: 0 200px 0 0;
@@ -17,34 +18,38 @@
 }
 
 
+=======
+>>>>>>> 9a74342b27995ec5dc9f80c5b7a25dea9bbbcff4
 .navbar {
   min-height: 50px;
 }
+
 .navbar-right {
-  margin-top: 40px;
+  margin-top  : 40px;
   margin-right: -50px;
 }
+
 .navbar-default {
   background-color: transparent;
-  border: none;
-  position: relative !important;
+  border          : none;
+  position        : relative !important;
 }
-.navbar-brand {
 
-}
+.navbar-brand {}
 
 ul.navbar-nav li {
-  margin: 0px 80px 0 0;
+  margin: 0 80px 0 0;
 
   a {
-    color: $darker-white;
+    color: $white !important;
   }
+
   & a:hover {
     text-decoration: none;
-    color: $color-prim;
+    color          : $color-prim;
   }
+
   &:last-child a {
     color: $color-prim !important;
   }
 }
-
