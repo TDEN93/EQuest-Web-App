@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/index.css';
 import './styles/App.css';
 //Import DataBase
 import Data from './Data/content';

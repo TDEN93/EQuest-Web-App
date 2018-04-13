@@ -1,5 +1,4 @@
 import React from 'react';
-import { Png, Svg } from './modules/IconList'; // Import icons with Figcaption.
 
 import { // BS import
   Grid,
@@ -13,14 +12,14 @@ import replayIcon from './assets/images/icons-home/replay.png';
 import statsIcon from './assets/images/icons-home/stats.png';
 import tacticalIcon from './assets/images/icons-home/tactical.png';
 
+
+import { Png } from './modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
-  const page = props.homePage;
-//   const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
-// 		return <Svg key={i} src={svg}/>
-// 	});
-// 	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
-// 		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
-// });
+	const page = props.homePage;
+	
+	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
+		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
+});
   return (
     <header id="home-section">
       <Grid fluid={true}>
@@ -41,7 +40,8 @@ const Home = (props) => {
           </Col>
           <Col xs={12} md={12}>
             <div className="service-icons-container">
-              <a href="/"><figure className="service-item">
+            {pngs}
+              {/* <a href="/"><figure className="service-item">
                 <img src={replayIcon} alt="replay-icon" height="80" />
                 <figcaption className="caption">{page.replayService}</figcaption>
               </figure></a>
@@ -54,7 +54,7 @@ const Home = (props) => {
               <a href="/"><figure className="service-item">
                 <img src={tacticalIcon} alt="replay-icon" height="80" />
                 <figcaption className="caption">{page.tacticalService}</figcaption>
-              </figure></a>
+              </figure></a> */}
             </div>
           </Col>
           <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>
