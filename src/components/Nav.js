@@ -3,25 +3,21 @@ import logo from './assets/images/logo-full.svg';
 import { NavLink } from 'react-router-dom';
 import { // BS import
   Nav,
-<<<<<<< HEAD
   Col,
   Grid,
   Navbar,
-  Row
-=======
-  NavItem,
-  Navbar
->>>>>>> 07522f53e36b642b7600c7fa3ee127e4eab1450a
+  Row,
+  // NavItem,
+  // Navbar
 } from 'react-bootstrap';
 import AnchorLink from './Link';
 const SiteNav = (props) => {
   const Links = props.navPage.navNames.map((link, index) => {
     return <AnchorLink key={index} name={link}/>
   });
-
-  function handleSelect(selectedKey) {
-    alert(`selected ${selectedKey}`);
-  }
+  // function handleSelect(selectedKey) {
+  //   alert(`selected ${selectedKey}`);
+  // }
   return(<Grid fluid={true}>
       <Row>
         <Col xs={12}>
