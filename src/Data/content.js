@@ -1,4 +1,5 @@
 import { Replay, Stats, Tactical } from '../components/assets/images/icons-home'; //Import png icons.
+import { HeaderRL } from '../components/assets/images/game-headers'; //Import png game headers
 const contentData = [{
 	Components: [{
 		name: 'Nav.js',
@@ -30,6 +31,9 @@ const contentData = [{
 			Replay,
 			Stats,
 			Tactical
+		],
+		figureImages: [
+			HeaderRL,
 		]
 	}],
 	// 	name: '',

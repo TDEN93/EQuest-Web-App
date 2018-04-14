@@ -17,4 +17,11 @@ const Png = (props) => {
             </figure>
         </NavLink>);
 }
-export { Svg, Png };
+const FigureImages = (props) => {
+  return (
+      <a href="/"><figure class="header-item">
+        <img src={props.src} alt="replay-icon" />
+      </figure></a>
+    )
+}
+export { Svg, Png, FigureImages };

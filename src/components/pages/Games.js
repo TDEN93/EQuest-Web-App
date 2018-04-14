@@ -6,37 +6,17 @@ import { // BS import
 	Col,
 	Clearfix
 } from 'react-bootstrap';
+import { FigureImages } from '../modules/IconList'; // Import icons with Figcaption.
 const Games = (props) => {
-	const page = props.gamePage;
+    const page = props.gamePage;
+    const figureImages = page.figureImages.map((figureImages, i) => { // Map header images with figure
+		return <FigureImages key={i} src={figureImages}/>
+	});
 	return(<header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
                     <Col className="main-content supported-game-container">
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                        <a href="/"><figure class="header-item">
-                            <img src={rocketLeagueHeader} alt="replay-icon" height="250" />
-                        </figure></a>
-
-                    <div className="corner-ribbon bottom-right sticky orange shadow">{page.betaTag}</div>
+                        {figureImages}
                     </Col>
                 </Row>
             </Grid >
