@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/images/logo-full.svg';
+import logo from './assets/images/logo-full.png';
 import { NavLink } from 'react-router-dom'; // Dependencies
 import { // BS import
 	Nav,

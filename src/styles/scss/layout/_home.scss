@@ -1,87 +1,88 @@
-// Home section  ------------------------ //
+#home-section {
+  text-align: center;
+  color: white;
+}
+
+// Home Page specific -------------------- //
+.firstRow {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  // Main title.
+  & .intro-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  & .intro-content button {
+    background-color: $color-prim;
+    border: 2px solid $color-prim;
+    border-radius: 5px;
+    padding: 15px 50px 15px;
+    @include text(15px, 15px, 1px, 700, null, $Raleway);
+    text-transform: uppercase;
+    height: 50px;
+    width: auto;
+  }
+  & .beta_notice {
+    @include text(14px, 28px, .5px, 400, $white, $Raleway);
+    opacity: .9;
+    margin: 20px 0 0 20px;
+  }
+  & .intro-content h1 {
+    @include text(21px, 30px, 0px, 300, null, $Raleway);
+    margin: 0 0 50px 0;
+
+    +p {
+      // Bottom content
+      @include text(14px, 20px, .5px, 700, $white, $Raleway);
+      margin: 0 0 40px 0;
+
+      >span {
+        color: $burnt-orange;
+      }
+    }
+    >span {
+      color: $burnt-orange;
+    }
+    
+  }
+}
+
+// Ribbons
+.corner-ribbon {
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #000;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  &.sticky {
+    position: fixed;
+  }
+  &.bottom-right {
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  &.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  }
+  &.orange {
+    background: $burnt-orange;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .main-content {
-    p {
-      display: none;
-    }
-  }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  header {
-    // All of home section //
-    &#home-section {
-      font-family          : $Panton-LightCaps;
-  
-      .main-content {
-        margin    : 0px auto 0 auto;
-        text-align: center;
-      }
-    }
-   
-  
-    // Ribbons
-    .corner-ribbon {
-      width            : 200px;
-      background       : #e43;
-      position         : absolute;
-      top              : 25px;
-      left             : -50px;
-      text-align       : center;
-      line-height      : 50px;
-      letter-spacing   : 1px;
-      color            : #000;
-      transform        : rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-  
-      &.sticky {
-        position: fixed;
-      }
-  
-      &.bottom-right {
-        top              : auto;
-        right            : -50px;
-        bottom           : 25px;
-        left             : auto;
-        transform        : rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-  
-      &.shadow {
-        box-shadow: 0 0 3px rgba(0,0,0,.3);
-      }
-  
-      &.orange {
-        background: $burnt-orange;
-      }
-    }
-  
-    // Home Page specific -------------------- //
-    .home-title {
-      // Main title.
-      &.home-title h1 {
-        @include text(5.2777rem, 1.2, $color-text-light);
-        font-family: $HomeFont;
-        text-shadow: 2px 2px 5px $black;
-  
-        + p {
-          // Bottom content
-          @include text(1.85rem, 0.1, 4.5px, $darker-white);
-          font-family: $HomeFont;
-          text-shadow: 2px 2px 5px #000;
-  
-          > span {
-            color: $burnt-orange;
-          }
-        }
-  
-        > span {
-          color: $burnt-orange;
-        }
-      }
-    }
-  }
-}
 
-
+@media only screen and (max-width: 600px) {}

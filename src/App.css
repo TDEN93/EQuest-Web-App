@@ -9,7 +9,6 @@ body {
 }
 
 #home-section {
-  background: url("./components/assets/images/background.png") no-repeat;
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
