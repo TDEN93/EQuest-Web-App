@@ -7,16 +7,15 @@
 .firstRow {
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  // Main title.
-  & .intro-content {
+  min-height: 100vh; // Main title.
+  & .intro-title {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  & .intro-content button {
+  & .intro-title button {
     background-color: $color-prim;
     border: 2px solid $color-prim;
     border-radius: 5px;
@@ -24,22 +23,19 @@
     @include text(15px, 15px, 1px, 700, null, $Raleway);
     text-transform: uppercase;
     height: 50px;
-    width: auto;
   }
   & .beta_notice {
     @include text(14px, 28px, .5px, 400, $white, $Raleway);
     opacity: .9;
     margin: 20px 0 0 20px;
   }
-  & .intro-content h1 {
-    @include text(21px, 30px, 0px, 300, null, $Raleway);
+  & .intro-title h1 {
+    @include text(21px, 30px, 0px, 700, null, $Raleway);
     margin: 0 0 50px 0;
-
     +p {
       // Bottom content
-      @include text(14px, 20px, .5px, 700, $white, $Raleway);
+      @include text(14px, 20px, .5px, 100, $white, $Raleway);
       margin: 0 0 40px 0;
-
       >span {
         color: $burnt-orange;
       }
@@ -47,7 +43,127 @@
     >span {
       color: $burnt-orange;
     }
+  }
+}
+
+.secondRow {
+  min-height: 100%;
+  h2 {
+    @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
+  }
+  & .intro-features {
+    width: 100%;
+  }
+}
+
+.intro-objects {
+  min-height: 100vh;
+  margin: 50px 0 0 0;
+  h2 {
+    @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
+  }
+  & .intro-features {
+    width: 100%;
+  }
+  & .feature-item {
+    margin: 50px 0 0 0;
+    h4 {
+      @include text(18px, 22px, 0px, null, $color-prim, $Monster);
+    }
+    h4 p {
+      @include text(14px, 20px, 0px, null, null, $Monster);
+    }
+    p {
+      @include text(14px, 20px, 0.5px, 100, null, $Monster);
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.keyFeatSection {
+  margin: 100px 0 100px 0;
+  & .intro-keys {
+    h2 {
+      @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
+    }
+  }
+  .tabsContainer {
+    margin: auto;
+    ul {
+      border-bottom: 1px solid $color-prim;
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      display: inline-block;
+      width: 57px;
+      padding: 0 5px 10px;
+    }
+  }
+  .tabs-info {
+    .tabs-info-text {
+      h3 {
+        @include text(33px, 36px, -1px, 300, $color-prim, $Monster);
+      }
+      p {
+        @include text(18px, 28px, .5px, 400, null, $Monster);
+      }
+    }
+  }
+}
+
+.footer-row {
+  background-color: #111;
+  .about {
+    padding: 25px 0;
     
+    .footer-logo img {
+      margin: 50px 0 20px 0;
+    }
+    .footer-text {
+      margin: 0 auto;
+      width: 90%;
+      padding: 0px 10px;
+      p {
+        @include text(16px, 20px, .5px, 400, #ced3d8, $Monster);
+      }
+    }
+    .discord-msg {
+      p {
+        @include text(14px, 30px, .5px, 700, #ced3d8, $Monster);
+      }
+    }
+    .social-icons {
+      width: 90%;
+      margin: 0 auto;
+      p {
+        display: inline;
+        vertical-align: top;
+        @include text(14px, 22px, .5px, 700, #ced3d8, $Monster);
+      }
+      .icon-img a {
+        color: #ced3d8;
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+  .contact {
+    .contact-item {
+      .contact-icon {
+        display: inline-block;
+        margin: 0 10px 30px 0;
+        font-size: 20px;
+        vertical-align: top;
+      }
+      .contact-content a {
+        @include text(14px, 22px, .5px, 600, #ced3d8, $Monster);
+      }
+      .contact-content {
+        display: inline-block;
+        line-height: 21px;
+      }
+    }
   }
 }
 

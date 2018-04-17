@@ -380,17 +380,6 @@ a:hover {
 .navbar-toggler {
   display: none; }
 
-@media only screen and (max-width: 600px) {
-  .navbar-brand {
-    margin: 0 70px 0 0; }
-  .navbar-default .navbar-toggle {
-    margin: -12px 15px 0 0;
-    border-color: #F8931F; }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #F8931F; }
-  .navbar-collapse {
-    margin: 20px 0 0 0; } }
-
 .navbar {
   min-height: 50px; }
 
@@ -413,6 +402,21 @@ ul.navbar-nav li {
   ul.navbar-nav li:last-child a {
     color: #F8931F !important; }
 
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    margin: 0 70px 0 0; }
+  .navbar-default .navbar-toggle {
+    margin: -12px 15px 0 0;
+    border-color: #F8931F; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #F8931F; }
+  .navbar-collapse {
+    margin: 20px 0 0 0; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: #fff;
+    height: 100vh;
+    margin: 0 -30px 0 -30px; } }
+
 #home-section {
   text-align: center;
   color: white; }
@@ -421,13 +425,13 @@ ul.navbar-nav li {
   display: flex;
   align-items: center;
   min-height: 100vh; }
-  .firstRow .intro-content {
+  .firstRow .intro-title {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .firstRow .intro-content button {
+  .firstRow .intro-title button {
     background-color: #F8931F;
     border: 2px solid #F8931F;
     border-radius: 5px;
@@ -438,8 +442,7 @@ ul.navbar-nav li {
     letter-spacing: 1px;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    height: 50px;
-    width: auto; }
+    height: 50px; }
   .firstRow .beta_notice {
     font-size: 14px;
     line-height: 28px;
@@ -449,25 +452,156 @@ ul.navbar-nav li {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     opacity: .9;
     margin: 20px 0 0 20px; }
-  .firstRow .intro-content h1 {
+  .firstRow .intro-title h1 {
     font-size: 21px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 0px;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     margin: 0 0 50px 0; }
-    .firstRow .intro-content h1 + p {
+    .firstRow .intro-title h1 + p {
       font-size: 14px;
       line-height: 20px;
-      font-weight: 700;
+      font-weight: 100;
       color: #fff;
       letter-spacing: 0.5px;
       font-family: "Raleway", Helvetica, Arial, sans-serif;
       margin: 0 0 40px 0; }
-      .firstRow .intro-content h1 + p > span {
+      .firstRow .intro-title h1 + p > span {
         color: #F8931F; }
-    .firstRow .intro-content h1 > span {
+    .firstRow .intro-title h1 > span {
       color: #F8931F; }
+
+.secondRow {
+  min-height: 100%; }
+  .secondRow h2 {
+    font-size: 21px;
+    line-height: 30px;
+    color: #F8931F;
+    letter-spacing: 0px;
+    font-family: "Raleway", Helvetica, Arial, sans-serif; }
+  .secondRow .intro-features {
+    width: 100%; }
+
+.intro-objects {
+  min-height: 100vh;
+  margin: 50px 0 0 0; }
+  .intro-objects h2 {
+    font-size: 21px;
+    line-height: 30px;
+    color: #F8931F;
+    letter-spacing: 0px;
+    font-family: "Raleway", Helvetica, Arial, sans-serif; }
+  .intro-objects .intro-features {
+    width: 100%; }
+  .intro-objects .feature-item {
+    margin: 50px 0 0 0; }
+    .intro-objects .feature-item h4 {
+      font-size: 18px;
+      line-height: 22px;
+      color: #F8931F;
+      letter-spacing: 0px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .intro-objects .feature-item h4 p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .intro-objects .feature-item p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 100;
+      letter-spacing: 0.5px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif;
+      max-width: 320px;
+      margin: 0 auto; }
+
+.keyFeatSection {
+  margin: 100px 0 100px 0; }
+  .keyFeatSection .intro-keys h2 {
+    font-size: 21px;
+    line-height: 30px;
+    color: #F8931F;
+    letter-spacing: 0px;
+    font-family: "Raleway", Helvetica, Arial, sans-serif; }
+  .keyFeatSection .tabsContainer {
+    margin: auto; }
+    .keyFeatSection .tabsContainer ul {
+      border-bottom: 1px solid #F8931F;
+      list-style: none;
+      padding: 0; }
+    .keyFeatSection .tabsContainer ul li {
+      display: inline-block;
+      width: 57px;
+      padding: 0 5px 10px; }
+  .keyFeatSection .tabs-info .tabs-info-text h3 {
+    font-size: 33px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #F8931F;
+    letter-spacing: -1px;
+    font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .keyFeatSection .tabs-info .tabs-info-text p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+
+.footer-row {
+  background-color: #111; }
+  .footer-row .about {
+    padding: 25px 0; }
+    .footer-row .about .footer-logo img {
+      margin: 50px 0 20px 0; }
+    .footer-row .about .footer-text {
+      margin: 0 auto;
+      width: 90%;
+      padding: 0px 10px; }
+      .footer-row .about .footer-text p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ced3d8;
+        letter-spacing: 0.5px;
+        font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .footer-row .about .discord-msg p {
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #ced3d8;
+      letter-spacing: 0.5px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .footer-row .about .social-icons {
+      width: 90%;
+      margin: 0 auto; }
+      .footer-row .about .social-icons p {
+        display: inline;
+        vertical-align: top;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #ced3d8;
+        letter-spacing: 0.5px;
+        font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+      .footer-row .about .social-icons .icon-img a {
+        color: #ced3d8;
+        margin: 0 0 0 15px; }
+  .footer-row .contact .contact-item .contact-icon {
+    display: inline-block;
+    margin: 0 10px 30px 0;
+    font-size: 20px;
+    vertical-align: top; }
+  .footer-row .contact .contact-item .contact-content a {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #ced3d8;
+    letter-spacing: 0.5px;
+    font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .footer-row .contact .contact-item .contact-content {
+    display: inline-block;
+    line-height: 21px; }
 
 .corner-ribbon {
   width: 200px;

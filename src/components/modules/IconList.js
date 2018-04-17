@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Svg = (props) => {
 	return(
 		// {/*  Social Media Icons */}
-    <li><NavLink to="/"><i className={props.src}></i></NavLink></li>
+    <span className="icon-img"><NavLink to="/"><i className={props.src}></i></NavLink></span>
   );
 }
 const Png = (props) => {

@@ -1,22 +1,5 @@
 // Site navigation ----------------------- //
 
-@media only screen and (max-width: 600px) {
-  .navbar-brand {
-    margin: 0 70px 0 0;
-  }
-  .navbar-default .navbar-toggle {
-    margin: -12px 15px 0 0;
-    border-color: $color-prim;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: $color-prim;
-  }
-  .navbar-collapse {
-    margin: 20px 0 0 0;
-  }
-}
-
-
 .navbar {
   min-height: 50px;
 }
@@ -32,7 +15,6 @@
   position        : relative !important;
 }
 
-.navbar-brand {}
 
 ul.navbar-nav li {
   margin: 0 80px 0 0;
@@ -50,3 +32,26 @@ ul.navbar-nav li {
     color: $color-prim !important;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    margin: 0 70px 0 0;
+  }
+  .navbar-default .navbar-toggle {
+    margin: -12px 15px 0 0;
+    border-color: $color-prim;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: $color-prim;
+  }
+  .navbar-collapse {
+    margin: 20px 0 0 0;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: $white;
+    height: 100vh;
+    margin: 0 -30px 0 -30px;
+  }
+}
+
+

@@ -8,8 +8,8 @@ const contentData = [{
 	}, {
 		name: 'Home.js',
 		title: 'ESPORTS ',
-		titleTopColored: 'ANALYTICS ',
-		titleTopAfter: 'AND RESEARCH',
+		titleTopColored: 'Analytics ',
+		titleTopAfter: 'and Research',
 		titleTag: 'The 1st personal performance analytics platform that highlights your ',
 		titleTagColored: 'strengths and weaknesses ',
 		titleTagAfter: 'to help you boost your game',
@@ -21,10 +21,10 @@ const contentData = [{
 		figcaption: ["Replay Analysis", "Overall Stats", "Tactical Analysis"], // Figcaption text.
 		svgs: [
 			// Svg file src path.
-			'fa fa-twitter fa-2x',
-			'fa fa-facebook-square fa-2x',
-			'fa fa-google-plus fa-2x',
-			'fa fa-instagram fa-2x'
+			'fa fa-twitter fa-1x',
+			'fa fa-facebook-square fa-1x',
+			'fa fa-google-plus fa-1x',
+			'fa fa-instagram fa-1x'
 		],
 		pngs: [
 			// Png file src path.

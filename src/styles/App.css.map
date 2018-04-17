@@ -5,8 +5,8 @@
 		"scss/App.scss"
 	],
 	"sourcesContent": [
-		"// @font-face {\r\n//   font-family: Panton-LightCaps;\r\n//   src        : url(\"../components/assets/fonts/Panton-LightCaps.otf\");\r\n// }\r\n\r\n@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');\r\n@import url('https://fonts.googleapis.com/css?family=Roboto');\r\n@import url('https://fonts.googleapis.com/css?family=Raleway');\r\n\r\n/* Extra small devices (phones, 600px and down) */\r\n@media only screen and (max-width: 600px) {}\r\n\r\n/* Small devices (portrait tablets and large phones, 600px and up) */\r\n@media only screen and (min-width: 600px) {}\r\n\r\n/* Medium devices (landscape tablets, 768px and up) */\r\n@media only screen and (min-width: 768px) {}\r\n\r\n/* Large devices (laptops/desktops, 992px and up) */\r\n@media only screen and (min-width: 992px) {}\r\n\r\n@media only screen and (min-width: 1200px) {}"
+		"// @font-face {\r\n//   font-family: Panton-LightCaps;\r\n//   src        : url(\"../components/assets/fonts/Panton-LightCaps.otf\");\r\n// }\r\n\r\n@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');\r\n@import url('https://fonts.googleapis.com/css?family=Raleway');\r\n@import url('https://fonts.googleapis.com/css?family=Montserrat');\r\n\r\n/* Extra small devices (phones, 600px and down) */\r\n@media only screen and (max-width: 600px) {}\r\n\r\n/* Small devices (portrait tablets and large phones, 600px and up) */\r\n@media only screen and (min-width: 600px) {}\r\n\r\n/* Medium devices (landscape tablets, 768px and up) */\r\n@media only screen and (min-width: 768px) {}\r\n\r\n/* Large devices (laptops/desktops, 992px and up) */\r\n@media only screen and (min-width: 992px) {}\r\n\r\n@media only screen and (min-width: 1200px) {}"
 	],
 	"names": [],
-	"mappings": "AAKA,OAAO,CAAC,uDAAI;AACZ,OAAO,CAAC,qDAAI;AACZ,OAAO,CAAC,sDAAI;AAEZ,kDAAkD;AAGlD,qEAAqE;AAGrE,sDAAsD;AAGtD,oDAAoD"
+	"mappings": "AAKA,OAAO,CAAC,uDAAI;AACZ,OAAO,CAAC,sDAAI;AACZ,OAAO,CAAC,yDAAI;AAEZ,kDAAkD;AAGlD,qEAAqE;AAGrE,sDAAsD;AAGtD,oDAAoD"
 }
