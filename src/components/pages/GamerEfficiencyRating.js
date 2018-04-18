@@ -5,8 +5,8 @@ import { // BS import
 	Col,
 	Clearfix
 } from 'react-bootstrap';
-const Research = (props) => {
-	const page = props.researchPage;
+const GamerEfficiencyRating = (props) => {
+	const page = props.gerPage;
 	return(<header id="home-section">
             <Grid fluid={true}>
                 <Row className="home-inner">
@@ -20,4 +20,4 @@ const Research = (props) => {
 
         </header >);
 }
-export default Research;
+export default GamerEfficiencyRating;

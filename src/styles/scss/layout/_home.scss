@@ -4,7 +4,7 @@
 }
 
 // Home Page specific -------------------- //
-.firstRow {
+.sct-1-home-cont {
   border-bottom: 5px solid $color-prim;
   height: 100vh; // Main title.
   & .intro-title {
@@ -45,44 +45,39 @@
   }
 }
 
-.secondRow {
+.sct-2-servInfo-cont {
   min-height: 100%;
   margin: 50px 0 0 0;
   h2 {
     @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
   }
-  & .intro-features {
+  & .servInfo-Title {
     width: 100%;
+  }
+  & .servInfo-icon-cont {
+    h2 {
+      @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
+    }
+    & .feature-item {
+      margin: 50px 0 0 0;
+      h4 {
+        @include text(18px, 22px, 0px, null, $color-prim, $Monster);
+      }
+      h4 p {
+        @include text(14px, 20px, 0px, null, null, $Monster);
+      }
+      p {
+        @include text(14px, 20px, 0.5px, 100, null, $Monster);
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
   }
 }
 
-.intro-objects {
-  min-height: 100%;
-  margin: 50px 0 0 0;
-  h2 {
-    @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
-  }
-  & .intro-features {
-    width: 100%;
-  }
-  & .feature-item {
-    margin: 50px 0 0 0;
-    h4 {
-      @include text(18px, 22px, 0px, null, $color-prim, $Monster);
-    }
-    h4 p {
-      @include text(14px, 20px, 0px, null, null, $Monster);
-    }
-    p {
-      @include text(14px, 20px, 0.5px, 100, null, $Monster);
-      max-width: 320px;
-      margin: 0 auto;
-    }
-  }
-  & .feature-icon img {}
-}
 
-.keyFeatSection {
+
+.sct-3-keyFeat {
   margin: 100px 0 100px 0;
   & .intro-keys {
     h2 {
@@ -232,7 +227,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-  .firstRow {
+  .sct-1-home-cont {
     & .intro-title h1 {
       @include text(58px, 60px, 0px, 100, null, $Monster);
       +p {
@@ -282,9 +277,16 @@
       opacity: 0;
     }
   }
-  .secondRow {
+  .sct-2-servInfo-cont {
     width: 60%;
     margin: 50px auto 0 auto;
+    & .servInfo-icon-cont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      vertical-align: top;
+      text-align: center;
+    }
     h2 {
       @include text(42px, 46px, 0px, null, $color-prim, $Monster);
     }
@@ -292,18 +294,8 @@
       @include text(20px, 28px, 0px, null, null, $Monster);
     }
   }
-  .intro-objects {
-    max-width: 60%;
-    margin: auto;
-    & .intro-features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      vertical-align: top;
-      text-align: center;
-    }
-  }
-  .keyFeatSection {
+
+  .sct-3-keyFeat {
     min-height: 100%;
     & .intro-keys {
       h2 {

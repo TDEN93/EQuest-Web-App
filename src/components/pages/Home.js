@@ -20,13 +20,8 @@ const Home = (props) => {
   });
 	return(<header id="home-section">
     <Grid fluid={true}>
-      <Row className="firstRow">
-        <Col className="social-media-container">
-          <ul className="social-media">
-            {/* Append svg icons to page */}
-            {/* {svgs} */}
-          </ul>
-        </Col>
+{/* Main Home Content */}
+      <Row className="sct-1-home-cont">
         <Col xs={12} md={12} lg={12} className="intro-title">
           <h1>
             <span>{page.title}</span>{page.titleTopColored}{page.titleTopAfter}
@@ -35,27 +30,19 @@ const Home = (props) => {
           <button>Join Open Beta</button>
           <p className="beta_notice">We’re in open beta — <strong>sign up for free account!</strong></p>
         </Col>
-        <section id="scroll-btn">
-          <a href="#serviceRow"><span></span></a>
-        </section>
-        
       </Row>
-      <Row className="secondRow" id="serviceRow">
-      {/* <Col xs={12} md={12}>
-          <div className="service-icons-container">
-            Append all png icons and figcaptions to page */}
-            {/* {pngs}
-          </div>
-        </Col> */}
-        <Col xs={12} md={12} lg={12} className="intro-features">
+{/* Scroll Button */}
+      <section id="scroll-btn">
+        <a href="#serviceRow"><span></span></a>
+      </section>
+{/* Service Information */}
+      <Row className="sct-2-servInfo-cont" id="serviceRow">
+        <Col xs={12} md={12} lg={12} className="servInfo-Title">
           {/* // add to content.js */}
           <h2>How does EQuest help you become a better player?</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. Cras vitae lacinia leo, sit amet sagittis ante. Cras pellentesque est ut felis laoreet facilisis. Phasellus bibendum consectetur finibus. Sed id elit non eros auctor laoreet. </p>
         </Col>
-        
-      </Row>
-      <Row className="intro-objects">
-        <Col xs={12} md={12} lg={12} className="intro-features">
+        <Col xs={12} md={12} lg={12} className="servInfo-icon-cont">
           <div className="feature-item">
             <div className="feature-icon">
               <img className="icon" src={icon}></img>
@@ -82,7 +69,8 @@ const Home = (props) => {
 
         </Col>
       </Row>
-      <Row className="keyFeatSection">
+{/* Key Features Section */}
+      <Row className="sct-3-keyFeat">
         <Col xs={12} md={12} lg={12} className="intro-keys">
           {/* // add to content.js */}
           <h2>Key Features</h2>
@@ -121,6 +109,7 @@ const Home = (props) => {
           </div>
         </Col>
       </Row>
+{/* Footer Section */}
       <Row className="footer-row">
         <footer>
           <Col xs={12} md={12} lg={12} className="about">
