@@ -6,5 +6,6 @@ import About from './About';
 import GamerEfficiencyRating from './GamerEfficiencyRating';
 import Dashboard from './dashboard';
 import NotFound from './NotFound';
+import SignUp from './SignUp';
 // Export
-export { Home, Blog, Services, About, GamerEfficiencyRating, Dashboard, NotFound };
+export { Home, Blog, Services, About, GamerEfficiencyRating, Dashboard, NotFound, SignUp };

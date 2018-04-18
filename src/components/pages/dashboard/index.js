@@ -34,7 +34,7 @@ export default class GitHub extends Component {
 		const uDash = this.state.uDash;
 		return(<div className='col-12 dash-contain row'>
             <div className='col-6'>
-              {/*  Not sure if we want titles or not? I cant decide honesly... */}
+              {/*  Not sure if we want titles or not? I cant decide honestly... */}
               <h1>{uDash.gameBar.title}</h1>
               <Bar
                 data={uDash.gameBar}
