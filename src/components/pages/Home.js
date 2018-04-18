@@ -173,6 +173,8 @@ const Home = (props) => {
           </Col>
           <Col xs={12} md={12} lg={12} className="tweet-ftr-container">
             <h5>RECENT TWEETS</h5>
+            <p>Test</p>
+            <p>Test</p>
           </Col>
 
         </footer>

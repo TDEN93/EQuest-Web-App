@@ -381,7 +381,8 @@ a:hover {
   display: none; }
 
 .navbar {
-  min-height: 50px; }
+  min-height: 50px;
+  margin: auto; }
 
 .navbar-right {
   margin-top: 40px;
@@ -422,9 +423,8 @@ ul.navbar-nav li {
   color: white; }
 
 .firstRow {
-  display: flex;
-  align-items: center;
-  min-height: 100vh; }
+  border-bottom: 5px solid #F8931F;
+  height: 100vh; }
   .firstRow .intro-title {
     position: absolute;
     width: 100%;
@@ -432,7 +432,9 @@ ul.navbar-nav li {
     left: 50%;
     transform: translate(-50%, -50%); }
   .firstRow .intro-title button {
-    background-color: #F8931F;
+    background: #F8931F;
+    /* The Fallback */
+    background: #f8931f;
     border: 2px solid #F8931F;
     border-radius: 5px;
     padding: 15px 50px 15px;
@@ -473,7 +475,8 @@ ul.navbar-nav li {
       color: #F8931F; }
 
 .secondRow {
-  min-height: 100%; }
+  min-height: 100%;
+  margin: 50px 0 0 0; }
   .secondRow h2 {
     font-size: 21px;
     line-height: 30px;
@@ -603,6 +606,42 @@ ul.navbar-nav li {
   .footer-row .contact .contact-item .contact-content {
     display: inline-block;
     line-height: 21px; }
+  .footer-row .tweet-ftr-container {
+    margin-top: 25px; }
+    .footer-row .tweet-ftr-container h5 {
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .footer-row .footer-menu .ftr-nav {
+    list-style: none; }
+    .footer-row .footer-menu .ftr-nav li {
+      font-size: 13px;
+      line-height: 15px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif;
+      margin: 0 25px 0 auto;
+      display: inline-block;
+      text-transform: uppercase; }
+  .footer-row .footer-menu p {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .footer-row .lgl-copy {
+    margin: 50px 0 50px 0; }
+    .footer-row .lgl-copy p {
+      font-size: 14px;
+      line-height: 18px;
+      color: #777;
+      letter-spacing: 1px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
 
 .corner-ribbon {
   width: 200px;
@@ -679,7 +718,7 @@ ul.navbar-nav li {
       opacity: 0; } }
   .secondRow {
     width: 60%;
-    margin: auto; }
+    margin: 50px auto 0 auto; }
     .secondRow h2 {
       font-size: 42px;
       line-height: 46px;

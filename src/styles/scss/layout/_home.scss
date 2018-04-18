@@ -5,9 +5,8 @@
 
 // Home Page specific -------------------- //
 .firstRow {
-  display: flex;
-  align-items: center;
-  min-height: 100vh; // Main title.
+  border-bottom: 5px solid $color-prim;
+  height: 100vh; // Main title.
   & .intro-title {
     position: absolute;
     width: 100%;
@@ -16,7 +15,7 @@
     transform: translate(-50%, -50%);
   }
   & .intro-title button {
-    background-color: $color-prim;
+    @include alpha-color($color-prim, 1);
     border: 2px solid $color-prim;
     border-radius: 5px;
     padding: 15px 50px 15px;
@@ -48,6 +47,7 @@
 
 .secondRow {
   min-height: 100%;
+  margin: 50px 0 0 0;
   h2 {
     @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
   }
@@ -166,6 +166,35 @@
       }
     }
   }
+
+  .tweet-ftr-container {
+    margin-top: 25px;
+    h5 {
+      @include text(15px, 23px, 1px, 700, $white, $Monster);
+    }
+  }
+  .footer-menu {
+    .ftr-nav {
+      list-style: none;
+      li {
+        @include text(13px, 15px, 1px, 700, $white, $Monster);
+        margin: 0 25px 0 auto;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+      
+    }
+    p {
+      @include text(13px, 16px, 1px, 400, $white, $Monster);
+    }
+
+  }
+  .lgl-copy {
+    margin: 50px 0 50px 0;
+    p {
+      @include text(14px, 18px, 1px, null, #777, $Monster);
+    }
+  }
 }
 
 // Ribbons
@@ -255,7 +284,7 @@
   }
   .secondRow {
     width: 60%;
-    margin: auto;
+    margin: 50px auto 0 auto;
     h2 {
       @include text(42px, 46px, 0px, null, $color-prim, $Monster);
     }
