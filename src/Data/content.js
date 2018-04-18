@@ -3,8 +3,8 @@ import { HeaderRL } from '../components/assets/images/game-headers'; //Import pn
 const contentData = [{
 	Components: [{
 		name: 'Nav.js',
-		navNames: ['Research', 'Services', 'Games', 'About', 'Sign Up'],
-		navLinks: ['#Research', '#Services', '#Games', '#About', '#SignUp'],
+		navNames: ['GER', 'Services', 'Blog', 'About', 'Login'],
+		navLinks: ['#GER', '#Services', '#Blog', '#About', '#Login'],
 	}, {
 		name: 'Home.js',
 		title: 'Esports ',

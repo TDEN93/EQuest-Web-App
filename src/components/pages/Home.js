@@ -126,7 +126,7 @@ const Home = (props) => {
           <Col xs={12} md={12} lg={12} className="about">
             <a className="footer-logo"><img src={logo} alt="logo" height="50" /></a>
             <div className="footer-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. Cras vitae lacinia leo, sit amet sagittis ante. Cras pellentesque est ut felis laoreet facilisis. Phasellus bibendum consectetur finibus. Sed id elit non eros auctor laoreet. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. </p>
             </div>
             <div className="discord-msg">
               <p>Talk to our team on: Discord</p>
@@ -171,10 +171,27 @@ const Home = (props) => {
               </div>
             </div>
           </Col>
-          <Col xs={12} md={12} lg={12} className="social">
+          <Col xs={12} md={12} lg={12} className="tweet-ftr-container">
+            <h5>RECENT TWEETS</h5>
           </Col>
 
         </footer>
+        <Col xs={12} md={12} lg={12} className="footer-menu">
+            <ul className="ftr-nav">
+              <a href="/"><li>Academy</li></a>
+              <a href="/"><li>Press</li></a>
+              <a href="/"><li>Terms</li></a>
+              <a href="/"><li>Privacy</li></a>
+              <a href="/"><li>Dev Blog</li></a>
+              <a href="/"><li>Careers</li></a>
+            </ul>
+            <p>Handcrafted with love by Gamers for Gamers</p>
+        </Col>
+        <Col xs={12} md={12} lg={12} className="lgl-copy">
+          <p>Copyright @ 2017-2018 All rights reserved by EQuest Research, Inc. <br></br> EQuest Research and Gamer Efficiency Rating are trademarks or registered trademarks of EQuest Research, Inc.</p>
+          <p>EQuest Research isn't endorsed by Psyonix and doesn't reflect the veiws or opinions of Psyonix or anyone officially involved in producing or <br></br> managing Rocket League. Rocket League and Psyonix are trademarks or registered trademarks of Psyonix, Inc</p>
+
+        </Col>
       
       </Row>
       <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>

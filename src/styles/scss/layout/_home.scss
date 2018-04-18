@@ -79,9 +79,7 @@
       margin: 0 auto;
     }
   }
-  & .feature-icon img {
-    
-  }
+  & .feature-icon img {}
 }
 
 .keyFeatSection {
@@ -102,6 +100,7 @@
       display: inline-block;
       width: 57px;
       padding: 0 5px 10px;
+      color: $color-prim;
     }
   }
   .tabs-info {
@@ -120,7 +119,6 @@
   background-color: #111;
   .about {
     padding: 25px 0;
-    
     .footer-logo img {
       margin: 50px 0 20px 0;
     }
@@ -203,6 +201,7 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
   .firstRow {
     & .intro-title h1 {
@@ -212,9 +211,7 @@
         @include text(21px, 27px, .5px, 100, $white, $Monster);
       }
     }
-  }
-
-  // Scroll Button Animation
+  } // Scroll Button Animation
   #scroll-btn a span {
     position: absolute;
     bottom: 8%;
@@ -256,7 +253,6 @@
       opacity: 0;
     }
   }
-
   .secondRow {
     width: 60%;
     margin: auto;
@@ -267,77 +263,46 @@
       @include text(20px, 28px, 0px, null, null, $Monster);
     }
   }
-
   .intro-objects {
     max-width: 60%;
     margin: auto;
-    h2 {
-      @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
-    }
     & .intro-features {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       vertical-align: top;
       text-align: center;
-      margin-top: 100px;
-    }
-    & .feature-item {
-      h4 {
-        @include text(18px, 22px, 0px, null, $color-prim, $Monster);
-      }
-      h4 p {
-        @include text(14px, 20px, 0px, null, null, $Monster);
-      }
-      p {
-        @include text(14px, 20px, 0.5px, 100, null, $Monster);
-        max-width: 320px;
-        margin: 0 auto;
-      }
-    }
-    & .feature-icon img {
-      
     }
   }
   .keyFeatSection {
     min-height: 100%;
-    margin-top: 200px;
     & .intro-keys {
       h2 {
         @include text(42px, 46px, 0px, null, $color-prim, $Monster);
       }
       p {
-        width: 40%;
+        width: 60%;
         margin: auto;
         @include text(18px, 28px, 0px, 0, null, $Monster);
       }
     }
     .tabsContainer {
-      margin: 50px 0;
+      margin: 50px auto;
       ul {
         width: 60%;
         margin: auto;
-        border-bottom: 1px solid $color-prim;
-        list-style: none;
-        padding: 0;
       }
       ul li {
-        display: inline-block;
         opacity: .6;
-        color: $color-prim;
-        width: 57px;
         padding: 0 50px 10px 50px;
-
       }
     }
     .tabs-info {
-      
       .tabs-info-container {
         width: 60%;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        
         .tabs-info-text {
           padding: 20px;
           h3 {
@@ -349,76 +314,61 @@
             float: left;
             text-align: justify;
             padding-right: 50px;
-            @include text(18px, 28px, .5px, 400, null, $Monster);
           }
         }
-        
       }
     }
   }
   .footer-row {
-    background-color: #111;
     footer {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      display: flex;      
       justify-content: space-between;
-      vertical-align: top;
-      text-align: center;
+      align-content: center;
+      margin-top: 50px;
     }
     .about {
-      padding: 25px 0;
-      
       .footer-logo img {
-        margin: 50px 0 20px 0;
+        margin: 0;;
       }
       .footer-text {
-        margin: 0 auto;
-        width: 90%;
-        padding: 0px 10px;
         p {
-          width: 60%;
+          width: 70%;
           margin: auto;
           text-align: justify;
           @include text(16px, 20px, .5px, 400, #ced3d8, $Monster);
         }
       }
-      .discord-msg {
-        p {
-          @include text(14px, 30px, .5px, 700, #ced3d8, $Monster);
-        }
-      }
-      .social-icons {
-        width: 90%;
-        margin: 0 auto;
-        p {
-          display: inline;
-          vertical-align: top;
-          @include text(14px, 22px, .5px, 700, #ced3d8, $Monster);
-        }
-        .icon-img a {
-          color: #ced3d8;
-          margin: 0 0 0 15px;
-        }
-      }
     }
     .contact {
-      .contact-item {
-        .contact-icon {
+      margin-top: 25px;
+    }
+    .tweet-ftr-container {
+      margin-top: 25px;
+    }
+    .footer-menu {
+      .ftr-nav {
+        list-style: none;
+        li {
+          @include text(13px, 15px, 1px, 700, $white, $Monster);
+          padding: 0 10px 0 10px;
           display: inline-block;
-          margin: 0 10px 30px 0;
-          font-size: 20px;
-          vertical-align: top;
+          text-transform: uppercase;
         }
-        .contact-content a {
-          @include text(14px, 22px, .5px, 600, #ced3d8, $Monster);
-        }
-        .contact-content {
-          display: inline-block;
-          line-height: 21px;
-        }
+        
       }
+      p {
+        @include text(13px, 15px, 1px, 700, $white, $Monster);
+      }
+
     }
   }
-  
+  .lgl-copy {
+    margin: 50px 0 50px 0;
+    p {
+      @include text(14px, 18px, 1px, 700, #777, $Monster);
+    }
+  }
 }

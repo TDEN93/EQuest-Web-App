@@ -7,8 +7,8 @@ import { // BS import
 	Clearfix
 } from 'react-bootstrap';
 import { FigureImages } from '../modules/IconList'; // Import icons with Figcaption.
-const Games = (props) => {
-    const page = props.gamePage;
+const Blog = (props) => {
+    const page = props.blogPage;
     const figureImages = page.figureImages.map((figureImages, i) => { // Map header images with figure
 		return <FigureImages key={i} src={figureImages}/>
 	});
@@ -23,4 +23,4 @@ const Games = (props) => {
 
         </header >);
 }
-export default Games;
+export default Blog;
