@@ -7,6 +7,8 @@ import { // BS import
 }
 from 'react-bootstrap';
 import logo from '../assets/images/logo-full.png';
+import icon from '../assets/images/icons.svg';
+import exampleDash from '../assets/images/demo.png';
 import { Png, Svg } from '../modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
@@ -33,10 +35,12 @@ const Home = (props) => {
           <button>Join Open Beta</button>
           <p className="beta_notice">We’re in open beta — <strong>sign up for free account!</strong></p>
         </Col>
-        
+        <section id="scroll-btn">
+          <a href="#serviceRow"><span></span></a>
+        </section>
         
       </Row>
-      <Row className="secondRow">
+      <Row className="secondRow" id="serviceRow">
       {/* <Col xs={12} md={12}>
           <div className="service-icons-container">
             Append all png icons and figcaptions to page */}
@@ -54,7 +58,7 @@ const Home = (props) => {
         <Col xs={12} md={12} lg={12} className="intro-features">
           <div className="feature-item">
             <div className="feature-icon">
-              {/* img */}
+              <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -62,7 +66,7 @@ const Home = (props) => {
 
           <div className="feature-item">
             <div className="feature-icon">
-              {/* img */}
+              <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -70,15 +74,7 @@ const Home = (props) => {
 
           <div className="feature-item">
             <div className="feature-icon">
-              {/* img */}
-            </div>
-            <h4><strong>Measure</strong><p>how good your game is</p></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-              {/* img */}
+            <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -89,25 +85,25 @@ const Home = (props) => {
       <Row className="keyFeatSection">
         <Col xs={12} md={12} lg={12} className="intro-keys">
           {/* // add to content.js */}
-          <h2>EQuest key features</h2>
+          <h2>Key Features</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. Cras vitae lacinia leo, sit amet sagittis ante. Cras pellentesque est ut felis laoreet facilisis. Phasellus bibendum consectetur finibus. Sed id elit non eros auctor laoreet. </p>
         </Col>
         <Col xs={12} md={12} lg={12} className="tabsContainer">
           <ul>
             <li data-tab-id="1">
-              {/* img */}
+              <i className="fa fa-user-circle fa-2x"></i>
               <p className="tabName">This</p>
             </li>
             <li data-tab-id="2">
-              {/* img */}
+            <i className="fa fa-server fa-2x"></i>
               <p className="tabName">This</p>
             </li>
             <li data-tab-id="3">
-              {/* img */}
+            <i className="fa fa-clipboard fa-2x"></i>
               <p className="tabName">This</p>
             </li>
             <li data-tab-id="4">
-              {/* img */}
+            <i className="fa fa-pie-chart fa-2x"></i>
               <p className="tabName">This</p>
             </li>
           </ul>
@@ -120,7 +116,7 @@ const Home = (props) => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. Cras vitae lacinia leo, sit amet sagittis ante. Cras pellentesque est ut felis laoreet facilisis. Phasellus bibendum consectetur finibus. Sed id elit non eros auctor laoreet. </p>
             </div>
             <div className="tabs-info-images">
-            {/* img */}
+              <img className="icon" src={exampleDash}></img>
            </div>
           </div>
         </Col>

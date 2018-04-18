@@ -7,7 +7,7 @@ const contentData = [{
 		navLinks: ['#Research', '#Services', '#Games', '#About', '#SignUp'],
 	}, {
 		name: 'Home.js',
-		title: 'ESPORTS ',
+		title: 'Esports ',
 		titleTopColored: 'Analytics ',
 		titleTopAfter: 'and Research',
 		titleTag: 'The 1st personal performance analytics platform that highlights your ',
