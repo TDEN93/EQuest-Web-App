@@ -9,7 +9,7 @@ from 'react-bootstrap';
 import logo from '../assets/images/logo-full.png';
 import icon from '../assets/images/icons.svg';
 import exampleDash from '../assets/images/demo.png';
-import { Png, Svg } from '../modules/IconList'; // Import icons with Figcaption.
+import { Png, Svg} from '../modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
 	const svgs = page.svgs.map((svg, i) => { // Map svg files and append.

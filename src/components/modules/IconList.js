@@ -24,4 +24,5 @@ const FigureImages = (props) => {
       </figure></a>
     )
 }
+
 export { Svg, Png, FigureImages };

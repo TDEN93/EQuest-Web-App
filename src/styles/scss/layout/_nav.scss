@@ -1,10 +1,11 @@
 // Site navigation ----------------------- //
 
+
 .navbar {
   min-height: 50px;
   margin: auto;
- 
 }
+
 
 .navbar-right {
   margin-top  : 40px;
@@ -34,6 +35,33 @@ ul.navbar-nav li {
   &:last-child a {
     color: $color-prim !important;
   }
+}
+
+svg {
+  overflow: visible;
+  
+}
+#outside {
+  transform: scale(.5);
+  animation-name: rotate-outside;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate-outside {
+  0% {transform: rotate(0deg) scale(.5);transform-origin: 50% 50%; }
+  50% {transform: rotate(360deg) scale(.6);transform-origin: 50% 50%;}
+  100% {transform: scale(.5);transform-origin: 50% 50%;}
+}
+
+#inside {
+  animation-name: rotate-inside;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate-inside {
+  0% {transform: rotate(0deg) scale(.5);transform-origin: 50% 50%; }
+  50% {transform: rotate(-360deg) scale(.6);transform-origin: 50% 50%;}
+  100% {transform: scale(.5);transform-origin: 50% 50%;}
 }
 
 @media only screen and (max-width: 600px) {

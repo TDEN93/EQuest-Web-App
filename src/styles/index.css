@@ -403,6 +403,42 @@ ul.navbar-nav li {
   ul.navbar-nav li:last-child a {
     color: #F8931F !important; }
 
+svg {
+  overflow: visible; }
+
+#outside {
+  transform: scale(0.5);
+  animation-name: rotate-outside;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate-outside {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    transform-origin: 50% 50%; }
+  50% {
+    transform: rotate(360deg) scale(0.6);
+    transform-origin: 50% 50%; }
+  100% {
+    transform: scale(0.5);
+    transform-origin: 50% 50%; } }
+
+#inside {
+  animation-name: rotate-inside;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate-inside {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    transform-origin: 50% 50%; }
+  50% {
+    transform: rotate(-360deg) scale(0.6);
+    transform-origin: 50% 50%; }
+  100% {
+    transform: scale(0.5);
+    transform-origin: 50% 50%; } }
+
 @media only screen and (max-width: 600px) {
   .navbar-brand {
     margin: 0 70px 0 0; }
@@ -423,7 +459,7 @@ ul.navbar-nav li {
   color: white; }
 
 .sct-1-home-cont {
-  border-bottom: 5px solid #F8931F;
+  border-bottom: 2px solid #F8931F;
   height: 100vh; }
   .sct-1-home-cont .intro-title {
     position: absolute;
