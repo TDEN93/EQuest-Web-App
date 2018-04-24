@@ -20,7 +20,7 @@ const SiteNav = (props) => {
           <Navbar.Header>
             <Navbar.Brand>
               <NavLink to='/'>
-                {/* <div className="svg-cont">
+                <div className="svg-cont">
                     <svg viewBox="0.334 0.334 85.647 79.215" width="85.647" height="79.215">
                         <g id="logo">
                             <path id="outside" d=" M 65.077 76.609 L 69.798 68.074 L 55.035 76.628 L 65.077 76.609 Z  M 64.91 3.298 L 69.63 11.834 L 54.867 3.279 L 64.91 3.298 Z  M 22.026 76.721 L 31.78 76.646 L 17.082 67.98 L 22.026 76.721 Z  M 22.026 3.195 L 31.78 3.27 L 17.082 11.936 L 22.026 3.195 Z  M 85.814 39.878 L 80.795 31.514 L 80.795 48.576 L 85.814 39.878 Z  M 0.502 39.878 L 5.52 31.514 L 5.52 48.576 L 0.502 39.878 Z "
@@ -29,8 +29,8 @@ const SiteNav = (props) => {
                                 fill-rule="evenodd" fill="rgb(248,147,31)" vector-effect="non-scaling-stroke" stroke-width="0.335" stroke="rgb(0,0,0)" stroke-opacity="1000000" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
                         </g>
                     </svg>
-                </div> */}
-                <img src={logo} alt="logo" height="50" />
+                </div>
+                <img src={logo} alt="logo" height="50" className="main-logo" />
               </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle />

@@ -5,7 +5,6 @@
 
 // Home Page specific -------------------- //
 .sct-1-home-cont {
-  border-bottom: 2px solid $color-prim;
   height: 100vh; // Main title.
   & .intro-title {
     position: absolute;
@@ -47,7 +46,7 @@
 
 .sct-2-servInfo-cont {
   min-height: 100%;
-  margin: 50px 0 0 0;
+  margin: 0px 0 0 0;
   h2 {
     @include text(21px, 30px, 0px, null, $color-prim, $Raleway);
   }
@@ -238,7 +237,7 @@
   } // Scroll Button Animation
   #scroll-btn a span {
     position: absolute;
-    bottom: 8%;
+    bottom: 20%;
     left: 50%;
     width: 24px;
     height: 24px;
@@ -279,7 +278,8 @@
   }
   .sct-2-servInfo-cont {
     width: 60%;
-    margin: 50px auto 0 auto;
+    height: 100vh;
+    margin: 0px auto 15% auto;
     & .servInfo-icon-cont {
       display: flex;
       flex-wrap: wrap;
@@ -296,7 +296,9 @@
   }
 
   .sct-3-keyFeat {
-    min-height: 100%;
+    min-height: 120%;
+    width: 100%;
+    margin: 0 auto 10% auto;
     & .intro-keys {
       h2 {
         @include text(42px, 46px, 0px, null, $color-prim, $Monster);

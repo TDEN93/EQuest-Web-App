@@ -5,26 +5,45 @@
   min-height: 50px;
   margin: auto;
 }
-
-
-.navbar-right {
-  margin-top  : 40px;
-  margin-right: -50px;
-}
-
 .navbar-default {
+  text-align: center;
   background-color: transparent;
   border          : none;
   position        : relative !important;
+  .navbar-toggle {
+    margin: 35px 40px 0 0;
+    border-color: $color-prim;
+    .icon-bar {
+      background-color: $color-prim;
+    }
+  } 
+  .navbar-right {
+    margin-top  : 30px;
+    margin-right: -50px;
+    @include text(16px, null, .5px, null, $white, $Monster);
+  }
+  .navbar-collapse, .navbar-default .navbar-form {
+    background-color: $almost-white;
+    height: 100vh;
+    margin: 20px 0 0 0;
+  }
+  .main-logo {
+    display: none;
+  }
+}
+.navbar-brand {
+  margin: 0px 0 20px 0px;
   
 }
+
+
 
 
 ul.navbar-nav li {
   margin: 0 80px 0 0;
 
   a {
-    color: $white !important;
+    color: $background-color2 !important;
   }
 
   & a:hover {
@@ -64,25 +83,31 @@ svg {
   100% {transform: scale(.5);transform-origin: 50% 50%;}
 }
 
-@media only screen and (max-width: 600px) {
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    width: 85%;
+  }
+  .navbar-default {
+    .main-logo {
+      display: block;
+    }
+    .svg-cont svg {
+      display: none;
+    }
+  }
   .navbar-brand {
-    margin: 0 70px 0 0;
+    margin: 35px 0 0 0;
   }
-  .navbar-default .navbar-toggle {
-    margin: -12px 15px 0 0;
-    border-color: $color-prim;
+  .navbar-collapse, .navbar-default .navbar-form {
+    background-color: transparent !important;
   }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: $color-prim;
+  ul.navbar-nav li {
+    a {
+      color: $white !important;
+    }
   }
-  .navbar-collapse {
-    margin: 20px 0 0 0;
-  }
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    background-color: $white;
-    height: 100vh;
-    margin: 0 -30px 0 -30px;
-  }
+
 }
-
-

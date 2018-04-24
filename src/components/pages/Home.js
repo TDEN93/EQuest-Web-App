@@ -67,6 +67,30 @@ const Home = (props) => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
           </div>
 
+          <div className="feature-item">
+            <div className="feature-icon">
+              <img className="icon" src={icon}></img>
+            </div>
+            <h4><strong>Measure</strong><p>how good your game is</p></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
+          </div>
+
+          <div className="feature-item">
+            <div className="feature-icon">
+              <img className="icon" src={icon}></img>
+            </div>
+            <h4><strong>Measure</strong><p>how good your game is</p></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
+          </div>
+
+          <div className="feature-item">
+            <div className="feature-icon">
+            <img className="icon" src={icon}></img>
+            </div>
+            <h4><strong>Measure</strong><p>how good your game is</p></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
+          </div>
+
         </Col>
       </Row>
 {/* Key Features Section */}

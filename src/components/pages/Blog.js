@@ -15,11 +15,6 @@ const Blog = (props) => {
 	return(<header id="blog-section">
             <Grid fluid={true} className="blog-container">
                 <Row>
-                    <Col xs={12} md={12} lg={12}>
-                        <div className="blogBanner">
-                        </div>
-                        
-                    </Col>
                     <Col xs={12} md={12} lg={12} className="blogCol">
                         <div className="tabs">
                             <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
@@ -76,8 +71,7 @@ const Blog = (props) => {
                                     <h4><b>John Doe</b></h4>
                                     <p>Architect & Engineer</p>
                                 </div>
-                            </div>
-                            
+                            </div>           
                         </div>
                     </Col>
                 </Row>
