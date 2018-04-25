@@ -987,14 +987,8 @@ figure.header-item img {
   justify-content: space-between; }
 
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.7);
-  transition: all .2s ease-in-out;
   margin: 20px auto 0 auto;
   width: 100%; }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
-    transform: scale(1.1); }
   .card .container {
     border-radius: 0 0 5px 5px !important;
     /* 5px rounded corners */
@@ -1015,24 +1009,113 @@ figure.header-item img {
   display: none; }
 
 @media only screen and (min-width: 992px) {
+  .blog-title {
+    text-align: center;
+    margin-top: 150px; }
+    .blog-title h1 {
+      font-size: 50px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #F8931F;
+      letter-spacing: 1px;
+      font-family: "Raleway", Helvetica, Arial, sans-serif; }
+    .blog-title p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0.5px;
+      font-family: "Raleway", Helvetica, Arial, sans-serif; }
   .card {
-    width: 30%; }
-    .card .card-image {
-      width: 100% !important;
-      margin: 0 !important; }
+    margin: 20px auto 50px auto; }
+    .card .container {
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 0 0 0px 0px !important;
+      /* 5px rounded corners */
+      padding: 0px;
+      background-color: #171717;
+      border: none;
+      color: #fff;
+      text-align: left; }
+      .card .container .card-image {
+        flex: 1 0 100%;
+        border-radius: 5px !important;
+        /* 5px rounded corners */
+        width: auto !important;
+        margin: 0 !important;
+        border: none;
+        flex-shrink: 2; }
+      .card .container .card-content .card-category {
+        font-size: 12px;
+        line-height: 10px;
+        font-weight: 700;
+        color: #ccc;
+        letter-spacing: 1px;
+        font-family: "Raleway", Helvetica, Arial, sans-serif; }
+        .card .container .card-content .card-category span a {
+          font-size: 12px;
+          line-height: 20px;
+          font-weight: 400;
+          color: #F8931F;
+          letter-spacing: 0.5px;
+          font-family: "Raleway", Helvetica, Arial, sans-serif; }
+      .card .container .card-content .card-title {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: "Raleway", Helvetica, Arial, sans-serif; }
+      .card .container .card-content .card-desc {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #F8931F;
+        letter-spacing: 0.5px;
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-right: 20px; }
+      .card .container .card-content .card-info {
+        align-self: flex-end;
+        justify-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ccc;
+        letter-spacing: 2px;
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        justify-content: flex-start;
+        align-items: flex-end; }
   .articleContainer {
-    width: 70%;
+    width: 60%;
     margin: 0 auto; }
   .tabs {
     display: block;
-    width: 100%;
+    width: 85%;
     margin: 50px auto 20px auto; }
     .tabs .nav-tabs {
       width: 70%;
       margin: 0 auto; }
+      .tabs .nav-tabs a {
+        color: #fff; }
+        .tabs .nav-tabs a:hover {
+          background-color: #F8931F;
+          border: none;
+          color: #000; }
       .tabs .nav-tabs .active a {
-        background-color: #fff;
-        border: none; } }
+        background-color: #F8931F;
+        color: #000;
+        border: none; }
+        .tabs .nav-tabs .active a:hover {
+          background-color: #F8931F;
+          border: none;
+          color: #000; }
+        .tabs .nav-tabs .active a:link {
+          background-color: #F8931F;
+          border: none;
+          color: #000; } }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

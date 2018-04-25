@@ -13,15 +13,9 @@
 
 // Blog Cards
 .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 5px 4px 8px 0 rgba(0,0,0,0.7);
-    transition: all .2s ease-in-out;
     margin: 20px auto 0 auto;
     width: 100%;
-    &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
-        transform: scale(1.1); 
-    }
+   
     .container {
         border-radius: 0 0 5px 5px !important; /* 5px rounded corners */
         border: solid 3px $color-prim;
@@ -30,6 +24,7 @@
         background-color: $white;
         color: $black;
         width: 100%;
+        
     }
     .card-image {
         border: solid 3px $color-prim;
@@ -38,6 +33,7 @@
         margin: 0 !important;
         border-radius: 5px 5px 0 0 !important;
     }
+    
 }
 
 
@@ -47,29 +43,111 @@
 
 
 @media only screen and (min-width: 992px) {
+    .blog-title {
+        text-align: center;
+        margin-top: 150px;
+        h1 {
+            @include text(50px, 20px, 1px, 400, $color-prim, $Raleway);
+        }
+        p {
+            @include text(14px, 20px, .5px, 400, $white, $Raleway);
+        }
+        
+    }
     // Blog Cards
     .card {
-        width: 30%;
-    
-        .card-image {
-            width: 100% !important;
-            margin: 0 !important;
+        margin: 20px auto 50px auto;
+        
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            border-radius: 0 0 0px 0px !important; /* 5px rounded corners */
+            padding: 0px;
+            background-color: $background-color2;
+            border: none;
+            color: $white;
+            text-align: left;
+            .card-image {
+                flex: 1 0 100%;
+                border-radius: 5px !important; /* 5px rounded corners */
+                width: auto !important;
+                margin: 0 !important;
+                border: none;
+                flex-shrink: 2;
+            }
+            .card-content {
+                .card-category {
+                    @include text(12px, 10px, 1px, 700, #ccc, $Raleway);
+                    
+                    span a {
+                        @include text(12px, 20px, .5px, 400, $color-prim, $Raleway);
+                    }
+                }
+                .card-title {
+                    
+                    @include text(24px, 40px, 1px, 700, $white, $Raleway);
+                }
+                .card-desc {
+                    
+                    @include text(18px, 20px, .5px, 300, $color-prim, $Raleway);
+                    padding-right: 20px;
+                }
+                .card-info {
+                    align-self: flex-end;
+                    justify-self: flex-end;
+                    display: flex;
+                    flex-direction: row;
+                    @include text(10px, 20px, 2px, 400, #ccc, $Raleway);
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                
+                }
+            }
+            
+            
+            
         }
+        
+    
+        
     }
+
+
     .articleContainer {
-        width:70%;
+        width:60%;
         margin: 0 auto;
+        
     }
     .tabs {
         display: block;
-        width: 100%;
+        width: 85%;
         margin: 50px auto 20px auto;
         .nav-tabs {
             width: 70%;
             margin: 0 auto;
+            a {
+                color: $white;
+                &:hover {
+                    background-color: $color-prim;
+                    border: none;
+                    color: $black;
+                }
+            }
+            
             .active a {
-                background-color: $white;
+                background-color: $color-prim;
+                color: $black;
                 border: none;
+                &:hover {
+                    background-color: $color-prim;
+                    border: none;
+                    color: $black;
+                }
+                &:link {
+                    background-color: $color-prim;
+                    border: none;
+                    color: $black;
+                }
 
             }
         }
