@@ -133,6 +133,20 @@ const Home = (props) => {
           </div>
         </Col>
       </Row>
+
+{/* //beta signup section */}
+      <Row className="open-beta-sct">
+        <Col xs={12} md={12} lg={12} className="open-beta">
+          <h2>Sign up for open beta</h2>
+          <form>
+            <input type="text" placeholder="Email Address.."></input>
+            
+          </form>
+          <span className="arrow">
+              <input type="button" value="Sign me up!"></input>
+          </span>
+        </Col>
+      </Row>
 {/* Footer Section */}
       <Row className="footer-row">
         <footer>
@@ -142,7 +156,7 @@ const Home = (props) => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. </p>
             </div>
             <div className="discord-msg">
-              <p>Talk to our team on: Discord</p>
+              <p>Talk to our team on: <span>Discord</span></p>
               <span>
                 {/* <a href="discordLink"><img src=""></img></a> */}
               </span>
@@ -158,7 +172,7 @@ const Home = (props) => {
             <h5>CONTACT US</h5>
             <div className="contact-item">
               <div className="contact-icon">
-                <i class="fa fa-envelope"></i>
+                <i className="fa fa-envelope"></i>
               </div>
               <div className="contact-content">
                 <a href="mailto: equestresearch@gmail.com">equestresearch@gmail.com</a>
@@ -167,7 +181,7 @@ const Home = (props) => {
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i class="fa fa-map-marker"></i>
+                <i className="fa fa-map-marker"></i>
               </div>
               <div className="contact-content">
                 2483 Irving Road, Santa Monica,
@@ -177,7 +191,7 @@ const Home = (props) => {
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i class="fa fa-phone"></i>
+                <i className="fa fa-phone"></i>
               </div>
               <div className="contact-content">
                 580-555-555
@@ -186,8 +200,7 @@ const Home = (props) => {
           </Col>
           <Col xs={12} md={12} lg={12} className="tweet-ftr-container">
             <h5>RECENT TWEETS</h5>
-            <p>Test</p>
-            <p>Test</p>
+            <a className="twitter-timeline" data-width="400" data-height="200" data-theme="dark" data-chrome="nofooter noborders noheader noscrollbar" data-tweet-limit="2" href="https://twitter.com/EQuestHQ?ref_src=twsrc%5Etfw"></a> 
           </Col>
 
         </footer>
@@ -200,7 +213,7 @@ const Home = (props) => {
               <a href="/"><li>Dev Blog</li></a>
               <a href="/"><li>Careers</li></a>
             </ul>
-            <p>Handcrafted with love by Gamers for Gamers</p>
+            <p>Handcrafted with <i className="fa fa-heart"></i> by Gamers for Gamers</p>
         </Col>
         <Col xs={12} md={12} lg={12} className="lgl-copy">
           <p>Copyright @ 2017-2018 All rights reserved by EQuest Research, Inc. <br></br> EQuest Research and Gamer Efficiency Rating are trademarks or registered trademarks of EQuest Research, Inc.</p>

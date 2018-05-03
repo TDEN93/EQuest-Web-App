@@ -7,7 +7,7 @@
 }
 .navbar-default {
   text-align: center;
-  background-color: transparent;
+  background-color: transparent !important;
   border          : none;
   position        : relative !important;
   .navbar-toggle {
@@ -17,6 +17,9 @@
       background-color: $color-prim;
     }
   } 
+  .navbar-collapse {
+    background-color: transparent !important;
+  }
   .navbar-right {
     margin-top  : 30px;
     margin-right: -50px;
@@ -88,9 +91,15 @@ svg {
 
 @media only screen and (min-width: 992px) {
   .navbar {
-    width: 85%;
+    width: 100%;
   }
   .navbar-default {
+    text-transform: uppercase;
+   
+    .navbar-right {
+      margin-top: 0 !important;
+      font-size: 14px; 
+    }
     .main-logo {
       display: block;
     }
@@ -99,7 +108,8 @@ svg {
     }
   }
   .navbar-brand {
-    margin: 35px 0 0 0;
+    margin: 10px 0px 0 35px !important;
+
   }
   .navbar-collapse, .navbar-default .navbar-form {
     background-color: transparent !important;

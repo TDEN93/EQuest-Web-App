@@ -3,14 +3,14 @@ import { HeaderRL } from '../components/assets/images/game-headers'; //Import pn
 const contentData = [{
 	Components: [{
 		name: 'Nav.js',
-		navNames: ['GER', 'Services', 'Blog', 'About', 'Login'],
-		navLinks: ['#GER', '#Services', '#Blog', '#About', '#Login'],
+		navNames: ['Login / Signup'],
+		navLinks: ['#Login/Signup'],
 	}, {
 		name: 'Home.js',
 		title: 'Esports ',
 		titleTopColored: 'Analytics ',
 		titleTopAfter: 'and Research',
-		titleTag: 'The 1st personal performance analytics platform that highlights your ',
+		titleTag: 'Lorem ipsum dolor sit amet, et has eros atqui abhorreant ',
 		titleTagColored: 'strengths and weaknesses ',
 		titleTagAfter: 'to help you boost your game',
 		replayService: 'Replay Analysis',

@@ -25,7 +25,7 @@
   & .beta_notice {
     @include text(14px, 28px, .5px, 400, $white, $Raleway);
     opacity: .9;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 0px;
   }
   & .intro-title h1 {
     @include text(21px, 30px, 0px, 700, null, $Raleway);
@@ -109,6 +109,60 @@
   }
 }
 
+.open-beta-sct {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: $color-prim;
+  background-image: -webkit-linear-gradient(80deg, $color-prim 50%, $background-color2 50%, $color-prim 50%);
+  min-height: 500px;
+  // background: $background-color2 url("../components/assets/images/arena.jpg") no-repeat center fixed;
+  
+  .open-beta {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    h2 {
+      text-transform: uppercase;
+      @include text(18px, 28px, .5px, 400, $background-color2, $Monster);
+    }
+    form {
+      align-self: center;
+      width:80%;
+      margin: 30px 0;
+      
+    }
+  
+    input[type=text] {
+        width: 30%;
+        padding:8px 15px;
+        background:rgba(50, 50, 50, 0.9);
+        border:none;
+        box-shadow: 2px 2px 12px $black; 
+    }
+    input[type=button] {
+        position:relative;
+        width: 150px;
+        padding:6px 15px;
+        left:-8px;
+        border:2px solid $background-color2;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-color:$color-prim;
+        color:$black;
+        
+        
+        
+    }
+  }
+  
+  
+}
+
+
 .footer-row {
   background-color: #111;
   .about {
@@ -126,6 +180,10 @@
     }
     .discord-msg {
       p {
+        margin-top: 10px;
+        @include text(14px, 30px, .5px, 700, $color-prim, $Monster);
+      }
+      span {
         @include text(14px, 30px, .5px, 700, #ced3d8, $Monster);
       }
     }
@@ -168,6 +226,9 @@
     }
   }
   .footer-menu {
+    .fa-heart {
+      color: $color-prim;
+    }
     .ftr-nav {
       list-style: none;
       li {
@@ -184,9 +245,9 @@
 
   }
   .lgl-copy {
-    margin: 50px 0 50px 0;
+    padding: 10px 50px 0 50px;
     p {
-      @include text(14px, 18px, 1px, null, #777, $Monster);
+      @include text(12px, 18px, 1px, null, #777, $Monster);
     }
   }
 }
@@ -354,7 +415,7 @@
     }
     .about {
       .footer-logo img {
-        margin: 0;;
+        margin: 0px 0 10px 0;
       }
       .footer-text {
         p {
@@ -362,6 +423,11 @@
           margin: auto;
           text-align: justify;
           @include text(16px, 20px, .5px, 400, #ced3d8, $Monster);
+        }
+        .discord-msg {
+          p {
+            margin-top: 10px;
+          }
         }
       }
     }
@@ -391,7 +457,8 @@
   .lgl-copy {
     margin: 50px 0 50px 0;
     p {
-      @include text(14px, 18px, 1px, 700, #777, $Monster);
+      @include text(12px, 18px, 1px, 700, #777, $Monster);
     }
   }
+  
 }

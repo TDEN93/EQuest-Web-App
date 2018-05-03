@@ -14,6 +14,7 @@ const index = (props) => {
 					<Route exact path='/services' render={() => <Services servicePage={props.Data[0].Components[1]} />} />
 					<Route exact path='/blog' render={() => <Blog blogPage={props.Data[0].Components[1]} />} />
 					<Route exact path='/about' render={() => <About aboutPage={props.Data[0].Components[1]} />} />
+
 					<Route exact path='/Login' render={() => <SignUp  />} />
 						{/* 404Error page */}
 						<Route component={NotFound} />

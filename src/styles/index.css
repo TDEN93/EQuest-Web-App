@@ -391,7 +391,7 @@ header#home-section {
 
 .navbar-default {
   text-align: center;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
   position: relative !important; }
   .navbar-default .navbar-toggle {
@@ -399,6 +399,8 @@ header#home-section {
     border-color: #F8931F; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #F8931F; }
+  .navbar-default .navbar-collapse {
+    background-color: transparent !important; }
   .navbar-default .navbar-right {
     margin-top: 30px;
     margin-right: -50px;
@@ -465,13 +467,18 @@ svg {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .navbar {
-    width: 85%; }
-  .navbar-default .main-logo {
-    display: block; }
-  .navbar-default .svg-cont svg {
-    display: none; }
+    width: 100%; }
+  .navbar-default {
+    text-transform: uppercase; }
+    .navbar-default .navbar-right {
+      margin-top: 0 !important;
+      font-size: 14px; }
+    .navbar-default .main-logo {
+      display: block; }
+    .navbar-default .svg-cont svg {
+      display: none; }
   .navbar-brand {
-    margin: 35px 0 0 0; }
+    margin: 10px 0px 0 35px !important; }
   .navbar-collapse, .navbar-default .navbar-form {
     background-color: transparent !important; }
   ul.navbar-nav li a {
@@ -511,7 +518,7 @@ svg {
     letter-spacing: 0.5px;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     opacity: .9;
-    margin: 20px 0 0 20px; }
+    margin: 20px 0 0 0px; }
   .sct-1-home-cont .intro-title h1 {
     font-size: 21px;
     line-height: 30px;
@@ -604,6 +611,48 @@ svg {
     letter-spacing: 0.5px;
     font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
 
+.open-beta-sct {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #F8931F;
+  background-image: -webkit-linear-gradient(80deg, #F8931F 50%, #171717 50%, #F8931F 50%);
+  min-height: 500px; }
+  .open-beta-sct .open-beta {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+    .open-beta-sct .open-beta h2 {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #171717;
+      letter-spacing: 0.5px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .open-beta-sct .open-beta form {
+      align-self: center;
+      width: 80%;
+      margin: 30px 0; }
+    .open-beta-sct .open-beta input[type=text] {
+      width: 30%;
+      padding: 8px 15px;
+      background: rgba(50, 50, 50, 0.9);
+      border: none;
+      box-shadow: 2px 2px 12px #000; }
+    .open-beta-sct .open-beta input[type=button] {
+      position: relative;
+      width: 150px;
+      padding: 6px 15px;
+      left: -8px;
+      border: 2px solid #171717;
+      text-transform: uppercase;
+      border-radius: 50px;
+      background-color: #F8931F;
+      color: #000; }
+
 .footer-row {
   background-color: #111; }
   .footer-row .about {
@@ -622,6 +671,14 @@ svg {
         letter-spacing: 0.5px;
         font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
     .footer-row .about .discord-msg p {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #F8931F;
+      letter-spacing: 0.5px;
+      font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+    .footer-row .about .discord-msg span {
       font-size: 14px;
       line-height: 30px;
       font-weight: 700;
@@ -667,6 +724,8 @@ svg {
       color: #fff;
       letter-spacing: 1px;
       font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .footer-row .footer-menu .fa-heart {
+    color: #F8931F; }
   .footer-row .footer-menu .ftr-nav {
     list-style: none; }
     .footer-row .footer-menu .ftr-nav li {
@@ -687,9 +746,9 @@ svg {
     letter-spacing: 1px;
     font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
   .footer-row .lgl-copy {
-    margin: 50px 0 50px 0; }
+    padding: 10px 50px 0 50px; }
     .footer-row .lgl-copy p {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 18px;
       color: #777;
       letter-spacing: 1px;
@@ -844,7 +903,7 @@ svg {
     align-content: center;
     margin-top: 50px; }
   .footer-row .about .footer-logo img {
-    margin: 0; }
+    margin: 0px 0 10px 0; }
   .footer-row .about .footer-text p {
     width: 70%;
     margin: auto;
@@ -855,6 +914,8 @@ svg {
     color: #ced3d8;
     letter-spacing: 0.5px;
     font-family: "Monsterrat", Helvetica, Arial, sans-serif; }
+  .footer-row .about .footer-text .discord-msg p {
+    margin-top: 10px; }
   .footer-row .contact {
     margin-top: 25px; }
   .footer-row .tweet-ftr-container {
@@ -881,7 +942,7 @@ svg {
   .lgl-copy {
     margin: 50px 0 50px 0; }
     .lgl-copy p {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 18px;
       font-weight: 700;
       color: #777;
@@ -1116,33 +1177,5 @@ figure.header-item img {
           background-color: #F8931F;
           border: none;
           color: #000; } }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .social-media-container {
-    display: none; } }
-
-.social-media-container {
-  margin: 0 !important; }
-
-.social-media {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0 0 0 20px;
-  display: inline-block; }
-  .social-media li {
-    margin: 10px 0 0 0; }
-  .social-media .fa-twitter {
-    /* color: #1da1f2; */
-    color: #fff; }
-  .social-media .fa-facebook-square {
-    /* color: #3b5998; */
-    color: #fff; }
-  .social-media .fa-google-plus {
-    /* color: #dd4b39; */
-    color: #fff; }
-  .social-media .fa-instagram {
-    /* color: #833ab4; */
-    color: #fff; }
 
 /*# sourceMappingURL=index.css.map */
