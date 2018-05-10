@@ -206,12 +206,12 @@ const Home = (props) => {
         </footer>
         <Col xs={12} md={12} lg={12} className="footer-menu">
             <ul className="ftr-nav">
-              <a href="/"><li>Academy</li></a>
-              <a href="/"><li>Press</li></a>
-              <a href="/"><li>Terms</li></a>
+              <a href="/tutorials"><li>Tutorials</li></a>
+              <a href="/press"><li>Press</li></a>
+              <a href="/terms"><li>Terms</li></a>
               <a href="/"><li>Privacy</li></a>
-              <a href="/"><li>Dev Blog</li></a>
-              <a href="/"><li>Careers</li></a>
+              <a href="/blog"><li>Dev Blog</li></a>
+              <a href="/careers"><li>Join Us!</li></a>
             </ul>
             <p>Handcrafted with <i className="fa fa-heart"></i> by Gamers for Gamers</p>
         </Col>

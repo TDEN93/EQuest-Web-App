@@ -11,12 +11,8 @@ const contentData = [{
 		titleTopColored: 'Analytics ',
 		titleTopAfter: 'and Research',
 		titleTag: 'Lorem ipsum dolor sit amet, et has eros atqui abhorreant ',
-		titleTagColored: 'strengths and weaknesses ',
-		titleTagAfter: 'to help you boost your game',
-		replayService: 'Replay Analysis',
-		overallService: 'Overall Stats',
-		tacticalService: 'Tactical Analysis',
-		apiService: ' Tracker API',
+		titleTagColored: 'Lorem ipsum dolor sit amet ',
+		titleTagAfter: 'Lorem ipsum dolor sit amet',
 		betaTag: 'Beta',
 		figcaption: ["Replay Analysis", "Overall Stats", "Tactical Analysis"], // Figcaption text.
 		svgs: [
