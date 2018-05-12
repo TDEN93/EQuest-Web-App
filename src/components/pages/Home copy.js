@@ -6,10 +6,10 @@ import { // BS import
 	Clearfix
 }
 from 'react-bootstrap';
-// import logo from '../assets/images/logo-full.png';
-// import icon from '../assets/images/icons.svg';
-// import exampleDash from '../assets/images/demo.png';
-import { Png, Svg } from '../modules/IconList'; // Import icons with Figcaption.
+import logo from '../assets/images/logo-full.png';
+import icon from '../assets/images/icons.svg';
+import exampleDash from '../assets/images/demo.png';
+import { Png, Svg} from '../modules/IconList'; // Import icons with Figcaption.
 const Home = (props) => {
 	const page = props.homePage;
 	const svgs = page.svgs.map((svg, i) => { // Map svg files and append.
@@ -17,8 +17,8 @@ const Home = (props) => {
 	});
 	const pngs = page.pngs.map((pngs, i) => { // Map png icons files  with figcaption and append.
 		return <Png key={i} src={pngs} caption={page.figcaption[i]}/>
-	});
-	return (<header id="home-section">
+  });
+	return(<header id="home-section">
     <Grid fluid={true}>
 {/* Main Home Content */}
       <Row className="sct-1-home-cont">
@@ -45,7 +45,7 @@ const Home = (props) => {
         <Col xs={12} md={12} lg={12} className="servInfo-icon-cont">
           <div className="feature-item">
             <div className="feature-icon">
-              {/* <img className="icon" src={icon}></img> */}
+              <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -53,7 +53,7 @@ const Home = (props) => {
 
           <div className="feature-item">
             <div className="feature-icon">
-              {/* <img className="icon" src={icon}></img> */}
+              <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -61,31 +61,7 @@ const Home = (props) => {
 
           <div className="feature-item">
             <div className="feature-icon">
-            {/* <img className="icon" src={icon}></img> */}
-            </div>
-            <h4><strong>Measure</strong><p>how good your game is</p></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-              {/* <img className="icon" src={icon}></img> */}
-            </div>
-            <h4><strong>Measure</strong><p>how good your game is</p></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-              {/* <img className="icon" src={icon}></img> */}
-            </div>
-            <h4><strong>Measure</strong><p>how good your game is</p></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-            {/* <img className="icon" src={icon}></img> */}
+            <img className="icon" src={icon}></img>
             </div>
             <h4><strong>Measure</strong><p>how good your game is</p></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. </p>
@@ -128,35 +104,21 @@ const Home = (props) => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. Integer at orci elementum, aliquet elit scelerisque, elementum massa. Cras vitae lacinia leo, sit amet sagittis ante. Cras pellentesque est ut felis laoreet facilisis. Phasellus bibendum consectetur finibus. Sed id elit non eros auctor laoreet. </p>
             </div>
             <div className="tabs-info-images">
-              {/* <img className="icon" src={exampleDash}></img> */}
+              <img className="icon" src={exampleDash}></img>
            </div>
           </div>
-        </Col>
-      </Row>
-
-{/* //beta signup section */}
-      <Row className="open-beta-sct">
-        <Col xs={12} md={12} lg={12} className="open-beta">
-          <h2>Sign up for open beta</h2>
-          <form>
-            <input type="text" placeholder="Email Address.."></input>
-
-          </form>
-          <span className="arrow">
-              <input type="button" value="Sign me up!"></input>
-          </span>
         </Col>
       </Row>
 {/* Footer Section */}
       <Row className="footer-row">
         <footer>
           <Col xs={12} md={12} lg={12} className="about">
-            {/* <a className="footer-logo"><img src={logo} alt="logo" height="50" /></a> */}
+            <a className="footer-logo"><img src={logo} alt="logo" height="50" /></a>
             <div className="footer-text">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat congue varius. Maecenas sit amet hendrerit enim, eu venenatis turpis. </p>
             </div>
             <div className="discord-msg">
-              <p>Talk to our team on: <span>Discord</span></p>
+              <p>Talk to our team on: Discord</p>
               <span>
                 {/* <a href="discordLink"><img src=""></img></a> */}
               </span>
@@ -172,16 +134,16 @@ const Home = (props) => {
             <h5>CONTACT US</h5>
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="fa fa-envelope"></i>
+                <i class="fa fa-envelope"></i>
               </div>
               <div className="contact-content">
                 <a href="mailto: equestresearch@gmail.com">equestresearch@gmail.com</a>
               </div>
-
+            
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="fa fa-map-marker"></i>
+                <i class="fa fa-map-marker"></i>
               </div>
               <div className="contact-content">
                 2483 Irving Road, Santa Monica,
@@ -191,7 +153,7 @@ const Home = (props) => {
             </div>
             <div className="contact-item">
               <div className="contact-icon">
-                <i className="fa fa-phone"></i>
+                <i class="fa fa-phone"></i>
               </div>
               <div className="contact-content">
                 580-555-555
@@ -200,27 +162,28 @@ const Home = (props) => {
           </Col>
           <Col xs={12} md={12} lg={12} className="tweet-ftr-container">
             <h5>RECENT TWEETS</h5>
-            <a className="twitter-timeline" data-width="400" data-height="200" data-theme="dark" data-chrome="nofooter noborders noheader noscrollbar" data-tweet-limit="2" href="https://twitter.com/EQuestHQ?ref_src=twsrc%5Etfw"></a>
+            <p>Test</p>
+            <p>Test</p>
           </Col>
 
         </footer>
         <Col xs={12} md={12} lg={12} className="footer-menu">
             <ul className="ftr-nav">
-              <a href="/tutorials"><li>Tutorials</li></a>
-              <a href="/press"><li>Press</li></a>
-              <a href="/terms"><li>Terms</li></a>
+              <a href="/"><li>Academy</li></a>
+              <a href="/"><li>Press</li></a>
+              <a href="/"><li>Terms</li></a>
               <a href="/"><li>Privacy</li></a>
-              <a href="/blog"><li>Dev Blog</li></a>
-              <a href="/careers"><li>Join Us!</li></a>
+              <a href="/"><li>Dev Blog</li></a>
+              <a href="/"><li>Careers</li></a>
             </ul>
-            <p>Handcrafted with <i className="fa fa-heart"></i> by Gamers for Gamers</p>
+            <p>Handcrafted with love by Gamers for Gamers</p>
         </Col>
         <Col xs={12} md={12} lg={12} className="lgl-copy">
           <p>Copyright @ 2017-2018 All rights reserved by EQuest Research, Inc. <br></br> EQuest Research and Gamer Efficiency Rating are trademarks or registered trademarks of EQuest Research, Inc.</p>
           <p>EQuest Research isn't endorsed by Psyonix and doesn't reflect the veiws or opinions of Psyonix or anyone officially involved in producing or <br></br> managing Rocket League. Rocket League and Psyonix are trademarks or registered trademarks of Psyonix, Inc</p>
 
         </Col>
-
+      
       </Row>
       <div className="corner-ribbon bottom-right sticky orange shadow">Beta</div>
     </Grid>

@@ -1,0 +1,66 @@
+// Descriptive color variables
+
+$white             : #fff;
+$almost-white      : #F8F8FA;
+$black             : #000;
+$darker-white      : #ccc;
+$grey              : #878787;
+$regent-st-blue    : #add8e6;
+$river-bed         : #48525c;
+$burnt-orange      : #F8931F;
+$baby-blue         : #00fff0;
+
+$dark-gray         : #7C7C8D;
+$dark-gray-blue    : #424C6D;
+$gray-blue         : #6C7799;
+$light-gray-blue   : #828EAE;
+$off-white         : #F8F9FA;
+$light-blue        : #5799DA;
+$light-fade-greed  : #97CBAD;
+$warm-purple       : #797DF8;
+$light-pink        : #DBA3B7;
+
+// Functional color variables
+
+$color-prim        : $burnt-orange;
+$color-sec         : $river-bed;
+
+$color-text-light  : $white;
+$color-text-base   : $grey;
+$color-text-dark   : $river-bed;
+
+$color-border-light: lighten($grey, 35%);
+$color-border-dark : $burnt-orange;
+
+$color-link-default: $burnt-orange;
+$color-link-visited: $regent-st-blue;
+
+$color-shadow      : rgba($black,.8);
+$color-body        : $white;
+
+// Font stacks
+
+$stack-sans-serif  : Helvetica, Arial, sans-serif;
+$stack-helvetica   : 'Helvetica Neue', $stack-sans-serif;
+$stack-abolition   : 'Abolition Regular', $stack-sans-serif;
+/* This font is optional */
+$HomeFont          : 'Do Hyeon', $stack-sans-serif;
+$Panton-LightCaps  : Panton-LightCaps, $stack-sans-serif;
+$Raleway            : 'Raleway', $stack-sans-serif;
+$Monster            : 'Monsterrat', $stack-sans-serif;
+
+// Border radius
+$br                : 10px;
+
+// Asset paths
+
+$path-img          : '../img';
+$path-font         : '../fonts';
+
+// Media query breakpoints
+
+$brk-narrow        : '(max-width: 768px)';
+$brk-wide          : '(max-width: 1024px)';
+
+// Spacing
+$spacer             : 10px;

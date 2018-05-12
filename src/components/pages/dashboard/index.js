@@ -16,6 +16,10 @@ import {
 import {
 	uDash
 } from '../../../Data/DashBoardData/userData';
+import { // BS import
+	Grid,
+	Col,
+} from 'react-bootstrap';
 export default class GitHub extends Component {
 	constructor(props) {
 		super(props);
@@ -25,36 +29,36 @@ export default class GitHub extends Component {
 		};
 	}
 	componentDidMount() { // Will need this.
-		this.setState({ hasError: true });
+		// this.setState({ hasError: true });
 	}
 	render() { // RENDER() //
-		if(this.state.hasError) {
+		if (this.state.hasError) {
 			return <h1> Oh no something went wrong </h1>
 		}
 		const uDash = this.state.uDash;
-		return(<div className='col-12 dash-contain row'>
-            <div className='col-6'>
+		return (<Grid>
+            <Col md={6}>
               {/*  Not sure if we want titles or not? I cant decide honestly... */}
               <h1>{uDash.gameBar.title}</h1>
               <Bar
                 data={uDash.gameBar}
                 width={100}
                 height={50}/>
-            </div>
-            <div className='col-6'>
+            </Col>
+            <Col md={6}>
               <Doughnut
                 ref='chart'
                 data={uDash.gameBar}
                 width={100}
                 height={50} />
-          </div>
-          <div className='col-12'>
+          </Col>
+          <Col md={12}>
             <HorizontalBar
               data={uDash.gameSideBar}
               width={100}
               height={10} />
-        </div>
-        <div className='col-5'>
+        </Col>
+      <Col md={5}>
           <Radar
             data={uDash.radar}
             width={72}
@@ -63,22 +67,22 @@ export default class GitHub extends Component {
               data={uDash.lineHoursPlayed}
               width={100}
               height={52} />
-        </div>
+        </Col>
 
-      <div className='col-7'>
+    	<Col md={7}>
         <Bubble
           data={uDash.bubble}
           width={100}
           height={95} />
-      </div>
+      </Col>
 
-      <div className='col-12'>
+      <Col md={12}>
       <Bubble
         data={uDash.bubble}
         width={100}
         height={50} />
-    </div>
+    </Col>
 
-        </div>);
+	</Grid>);
 	}
 }
